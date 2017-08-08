@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>渠道结构分析</title>
+  <link rel="stylesheet" href="../css/public.css"/>
+  <link rel="stylesheet" href="../css/right.css"/>
+</head>
+<body>
+<div class="page">
+  <!--层级筛选-->
+  <div class="pageSelect">
+    <!--三级筛选-->
+    <div class="floatLeft selectFilter">
+      <select class="oneSelect">
+        <option data-index="-1">中南片区</option>
+      </select>
+      <select class="twoSelect">
+        <option data-index="-1">深圳门店</option>
+      </select>
+      <select class="twoSelect">
+        <option data-index="-1">食品类</option>
+      </select>
+      <select class="threeSelect">
+        <option value="0">咖啡</option>
+        <option value="1">薯片</option>
+      </select>
+      <input type="text" name="" id="select_text">
+      <input type="submit" id="dateSubmit2" class="date_picker dateClear" value="提 交"/>
+    </div>
+    <div class="floatRight detailsRight">
+      <select class="date_picker">
+        <option value="">请选择</option>
+        <option value="">昨日承运</option>
+        <option value="">昨日销售</option>
+        <option value="">过去一周销售</option>
+        <option value="">未来一周承运</option>
+      </select>
+      <a target="right" href="../paging/channelDetails.html" class="date_picker dateClear details">人工调价</a>
+    </div>
+  </div>
+  <!--KPI-->
+  <div class="homeTop">
+    <div class="homeTopText">
+      <span>商品库存</span>
+      <p class="inventory"></p>
+    </div>
+    <div class="homeTopText">
+      <span>建议价格</span>
+      <p class="price" style="color:#568EFD"></p>
+    </div>
+    <div class="homeTopText">
+      <span>新毛利</span>
+      <p class="profits" style="color:#568EFD"></p>
+    </div>
+    <div class="homeTopText">
+      <span>MD$</span>
+      <p class="rain"></p>
+    </div>
+    <div class="homeTopText" style="border-width: 0px;">
+      <select id="KPI_select" class="date_picker" style="height: 30px">
+        <option value="0">竞争对手最常出现价格</option>
+        <option value="1">竞争对手最近出现价格</option>
+        <option value="2">竞争对手最高价</option>
+        <option value="3">竞争对手最低价</option>
+      </select>
+      <p class="kpi_select">1317.6804万元</p>
+    </div>
+  </div>
+  <!--结构图-->
+  <div class="channelLayout">
+    <div class="pageDetail">
+      <!--仪表盘-->
+      <div class="chinaBar">
+        <div id="homeLineZH" class="floatLeft homeLineLeft homeLineMargin"></div>
+        <div id="homeLineXS" class="floatLeft homeLineLeft homeLineMargin"></div>
+        <div id="homeLine" class="floatLeft homeLineLeft homeLineMargin" style="margin-right:0"></div>
+        <!--<div class="homeLineBottom">
+        </div>-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="../js/echarts.js"></script>
+<script type="text/javascript" src="../js/cfg.js"></script>
+<script type="text/javascript" src="../js/channel.js"></script>
+</html>

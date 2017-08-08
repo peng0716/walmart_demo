@@ -1,0 +1,104 @@
+//home.jsonע��
+��ҳ����
+name:����
+allSales:Ĭ�����۶�
+allProxy:Ĭ�ϴ����
+selectSales:ʱ��ɸѡ���۶�
+selectProxy:ʱ��ɸѡ�����
+
+allDate: 8.1 - 8.7 ��ʼ��Ĭ����ʷ���۷���
+allDate2:8.7 - 8.21 ��ʼ��Ĭ��δ�����۷���
+
+selectDate: 8.1 - 8.7 ѡ��ʱ�����ʷ���۷���
+selectDate2:8.7 - 8.21 ѡ��ʱ���δ�����۷���
+selectOne:��ҳ��㼶ɸѡ
+provinceIevel:Ĭ���ߴ����
+provinceIevel:[
+    {
+        name:������
+        value:������
+        areaSales:�������۶�
+        areaProxy:���������
+        areaDate:��������
+        department:���۲�
+        department:[
+            {
+                name:���۲�����
+                value:����������
+                departmentSales:�������۶�
+                departmentProxy:���Ŵ����
+                departmentDirect:����ֱ��
+                sub:�¼�����
+            }
+        ],
+    }
+],
+provinceIevel2:ѡ��ʱ����ߴ����
+
+
+//�����ṹ����ҳ��
+
+links:ɣ��ͼ
+nodes:ɣ��ͼ
+structure:�ṹĬ������
+totalRevenue:������
+direct:ֱ��������
+distribution:����������
+    directDistribution��ֱ������
+    ����
+        local_offSite:�������
+        agent:������
+            platform:cƽ̨����
+    ֱ��
+    directChannel:ֱ������
+        website:������ͼ
+
+structure:ѡ��ʱ���Ӫҵ������
+totalRevenue:������
+distribution:����������
+direct:ֱ��������
+    directDistribution��ֱ������
+    ����
+        local_offSite:�������
+        agent:������
+    ֱ��
+    directChannel:ֱ������
+        website:������ͼ
+
+�����˼۽ṹ����
+tariffsData:Ĭ������
+    area:����
+        tariff:�˼�
+        numberOfSheets:����
+        areatariffPie:�����˼۱�ͼ����
+        areaNumberPie:����������ͼ����
+        fitGroup:ɢ����������ͼ
+        discounted:������������ͼ
+    tariffPie:�˼�������ͼ
+    numberPie:����������ͼ
+tariffsData2:ɸѡ����
+
+���������̽ṹ����
+interLineData:Ĭ������
+    interLinePie:��ͼ����
+        process:������������
+    interLineChina:��ͼ����
+        LSData:��������
+    goBack:��״ͼȥ�̻س�
+        total:����
+        interArea:��״ͼ����
+
+��λ�ṹҳ��
+spaceData:Ĭ������
+spaceData2:ɸѡ����
+
+//�ÿͽṹҳ��
+travelersData:Ĭ������
+    total:Ĭ������
+    allSales:Ĭ�����۶�
+    numberOfSheets:Ĭ������
+
+travelersData2:ѡ��Ӫҵ������
+    total:ѡ��Ӫҵ������
+    allSales:ѡ��Ӫҵ�����۶�
+    numberOfSheets:ѡ��Ӫҵ������
