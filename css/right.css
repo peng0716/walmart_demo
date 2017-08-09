@@ -1,407 +1,516 @@
-html,body{
-    overflow-y: auto;
+html, body {
+  overflow-y: auto;
 }
-.page{
-    padding: 20px;
+
+.marginTop {
+  margin-top:20px
+}
+
+.marginBottom {
+  margin-bottom: 10px;
+}
+.marginLeft {
+  margin-left:20px
+}
+.displayInlineBlock {
+  display: inline-block;
+}
+
+.page {
+  padding: 20px;
 }
 
 /*结构图*/
-.channel_force{
-    width:100%;
-    height: 400px;
-    border:1px solid #eee;
+.channel_force {
+  width: 100%;
+  height: 400px;
+  border: 1px solid #eee;
 }
 
 /*三级筛选*/
-.chinaBar{
-    margin:10px 0;
-    position: relative;
+.chinaBar {
+  margin: 10px 0;
+  position: relative;
 }
 
-.dashBoardText{
-    font-size: 24px;
-    font-weight: bold;
-    color: #777;
+.dashBoardText {
+  font-size: 24px;
+  font-weight: bold;
+  color: #777;
 }
-.homeLineMargin{
-    margin-right: 1%;
-    border: 1px solid #eee;
+
+.homeLineMargin {
+  margin-right: 1%;
+  border: 1px solid #eee;
 }
-.homeLineLeft{
-    height: 300px;
-    width:32.5%;
+
+.homeLineLeft {
+  height: 300px;
+  width: 32.5%;
 }
-.homeLineBottom{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 66%;
-    height: 300px;
-    border: 1px solid #eee;
+
+.homeLineBottom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 66%;
+  height: 300px;
+  border: 1px solid #eee;
 }
-.homeLineRight{
-    height: 300px;
-    width:50%;
+
+.homeLineRight {
+  height: 300px;
+  width: 50%;
 }
-.homeLayout{
-    position: relative;
-    margin-top:20px;
-    width:100%;
-    background: #fafafa;
+
+.homeLayout {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  background: #fafafa;
 }
-.homeChina{
-    width: 100%;
-    height: 500px;
+
+.homeChina {
+  width: 100%;
+  height: 500px;
 }
-.homeBar{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 44%;
-    height: 350px;
+
+.homeBar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 44%;
+  height: 350px;
 }
-.homeText{
-    position: absolute;
-    right: 50px;
-    top:70px;
-    width:34%;
-    height: 100px;
+
+.homeText {
+  position: absolute;
+  right: 50px;
+  top: 70px;
+  width: 34%;
+  height: 100px;
 }
-.homeText > p{
-    font-size: 14px;
-    line-height: 30px;
-    color:#999;
-    text-indent: 2em;
+
+.homeText > p {
+  font-size: 14px;
+  line-height: 30px;
+  color: #999;
+  text-indent: 2em;
 }
 
 /*筛选框*/
 .date_picker {
-    margin-right: 5px;
-    /*width: 90px;*/
-    background: #fefefe;
-    border: 1px solid #fff;
-    font-size: 14px;
-    color: #777;
-    padding: 5px;
-    border-radius: 3px;
-    outline: none
+  margin-right: 5px;
+  /*width: 90px;*/
+  background: #fefefe;
+  border: 1px solid #fff;
+  font-size: 14px;
+  color: #777;
+  padding: 5px;
+  border-radius: 3px;
+  outline: none
 }
-.dateClear{
-    width:60px;
-    color:#888;
-    cursor: pointer;
+
+.dateClear {
+  width: 60px;
+  color: #888;
+  cursor: pointer;
 }
-.dateClear:hover{
-    background: #FF5F3E;
-    border-color: #FF5F3E;
-    color:#fff;
+
+.dateClear:hover {
+  background: #FF5F3E;
+  border-color: #FF5F3E;
+  color: #fff;
 }
-.detailsRight > select{
-    height: 32px;
+
+.detailsRight > select {
+  height: 32px;
 }
 
 /*层级筛选*/
-.pageSelect{
-    padding: 10px;
-    height: 34px;
-    border: 1px solid #eee;
-    background: #f9f9f9;
-}
-.pageSelect >p{
-    display: inline-block;
-}
-.selectFilter>select{
-    margin-right:5px;
-    min-width: 100px;
-    height: 32px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    color: #777;
-    font-size: 14px;
-    cursor: pointer;
-    outline: none;
-    font-family: "微软雅黑", Helvetica, sans-serif;
+.pageSelect {
+  padding: 10px;
+  height: 34px;
+  border: 1px solid #eee;
+  background: #f9f9f9;
 }
 
-#select_text {
-    line-height: 30px;
-    padding-left: 5px;
-    border-radius: 5px;
-    border: 1px solid #eee;
-    outline: none;
+.pageSelect > p {
+  display: inline-block;
+}
+
+.selectFilter > select {
+  margin-right: 5px;
+  min-width: 100px;
+  height: 32px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  /*font-family: "微软雅黑", Helvetica, sans-serif;*/
+}
+
+.select_text {
+  line-height: 30px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  outline: none;
+}
+
+/*人工调价*/
+.artificiAldjustment {
+  display: none;
+  padding:10px;
+  background-color: #fafafa;
+}
+.pricing_title {
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 32px;
+  font-size: 14px;
+  color: #777;
+}
+#pricing_text,.fourSelectRule,#optimal {
+  display: none;
 }
 
 
 /*KPI*/
-.homeTop{
-    padding:10px 0;
-    width: 100%;
-    height: 80px;
-}
-.homeTopText{
-    float: left;
-    width: 19.9%;
-    border-right:1px solid #eee;
-    text-align: center;
-}
-.homeTopText > span,.homeTopText >p{
-    display: block;
-    line-height: 30px;
-    text-align: center;
-    color:#999;
-    font-size: 16px;
-}
-.homeTopText >p{
-    margin:0 10%;
-    line-height: 50px;
-    color:#FFA463;
-    font-size: 20px;
-    font-weight: bold;
-    background: #f9f9f9;
-    border-radius: 5px;
-}
-.details{
-    display: inline-block;
-    width:60px;
-    text-align: center;
-    background: #ddd;
-    border-color: #ddd;
-}
-.details:hover{
-    background: #FF5F3E;
-    border-color: #FF5F3E;
+.homeTop {
+  padding: 10px 0;
+  width: 100%;
+  height: 80px;
 }
 
-.channelLayout{
-    position: relative;
-    margin-top: 20px;
-    height: 500px;
-}
-.channelLeft{
-    margin-right:1%;
-    position: absolute;
-    left:0;
-    width: 38%;
-    height: 100%;
-    border:1px solid #eee;
-}
-.channel_totalRevenue{
-    position: absolute;
-    right:20px;
-    top: 8px;
-    z-index: 1;
-}
-.channel_totalRevenue >span{
-    font-size: 16px;
-}
-.totalRevenue,.distribution,.direct{
-    color: red;
-}
-.channelTop{
-    position: absolute;
-    right:0;
-    width: 60%;
-    height: 48%;
-    border:1px solid #eee;
-}
-.channel_twoTopPie{
-    width: 50%;
-    height: 100%;
-}
-.channelbottom{
-    position: absolute;
-    right:0;
-    bottom:0;
-    width: 60%;
-    height: 48%;
-    border:1px solid #eee;
-}
-/*明细页面*/
-.detailsLayout{
-    margin:20px;
-}
-.detailsLayout > h3{
-    padding-left:10px;
-    line-height: 40px;
-    font-size: 16px;
-    font-weight: 100;
-    background: #B8EAFA;
-}
-.detailsLayout > table{
-    display: inline-table;
-    width:15%;
-    background: #D8F3FC;
-    border-bottom: 7px solid #ddd;
-}
-.detailsLayout tr{
-    height: 30px;
-}
-.overview >table >thead{
-    background: #D8F3FC;
-}
-.overview >table > tbody >tr:nth-child(odd){
-    background: #f8f8f8;
-}
-.overview >table > tbody >tr:nth-child(even){
-    background: #eee;
+.homeTopText {
+  float: left;
+  width: 19.9%;
+  border-right: 1px solid #eee;
+  text-align: center;
 }
 
-/*渠道运价结构分析*/
-.tariffsTop{
-    position: relative;
-    width: 100%;
-    height: 300px;
-}
-.tariffsBar{
-    position: absolute;
-    width: 49%;
-    height: 100%;
-    border:1px solid #eee;
-}
-.tariffsPie{
-    position: absolute;
-    left: 24%;
-    width: 25%;
-    height: 60%;
-}
-.tariffsBar2{
-    position: absolute;
-    right: 0;
-    width: 49%;
-    height: 100%;
-    border:1px solid #eee;
-}
-.tariffsPie2{
-    position: absolute;
-    right: 0;
-    width: 25%;
-    height: 60%;
-}
-.tariffsBottom{
-    margin:20px 0;
-    position: relative;
-    width: 100%;
-    height: 350px;
-}
-.tariffsScatter{
-    position: absolute;
-    width: 49%;
-    height: 100%;
-    border:1px solid #eee;
-}
-.tariffsLine{
-    position: absolute;
-    right: 0;
-    width: 49%;
-    height: 100%;
-    border:1px solid #eee;
+.homeTopText > span, .homeTopText > p {
+  display: block;
+  line-height: 30px;
+  text-align: center;
+  color: #999;
+  font-size: 16px;
 }
 
-/*渠道单联程结构分析*/
-.interLineLeft{
-    position: absolute;
-    bottom:0;
-    right:0;
-    width: 25%;
-    height: 70%;
-    border:1px solid #eee;
+.homeTopText > p {
+  margin: 0 10%;
+  line-height: 50px;
+  color: #FFA463;
+  font-size: 20px;
+  font-weight: bold;
+  background: #f9f9f9;
+  border-radius: 5px;
 }
-.interLineLeft1{
-    width:100%;
-    height: 100%;
+
+.details {
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  background: #ddd;
+  border-color: #ddd;
 }
-.interLineText{
-    padding:1%;
-    position: absolute;
-    top:10px;
-    right:0;
-    width: 23%;
-    height: 28%;
+
+.details:hover {
+  background: #FF5F3E;
+  border-color: #FF5F3E;
 }
-.interLineText >p{
-    color:#999;
-    font-size: 14px;
-    line-height: 30px;
-    text-indent: 2em;
+
+.channelLayout {
+  position: relative;
+  margin-top: 20px;
 }
-.interLineRight{
-    position: absolute;
-    left:0;
-    width: 73%;
-    height: 100%;
-    border:1px solid #eee;
+
+.channelLeft {
+  margin-right: 1%;
+  position: absolute;
+  left: 0;
+  width: 38%;
+  height: 100%;
+  border: 1px solid #eee;
 }
-.interLineChina{
-    width: 100%;
-    height: 100%;
+
+.channel_totalRevenue {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  z-index: 1;
 }
-.interLineBar{
-    position: absolute;
-    right:20px;
-    bottom:50px;
-    width: 20%;
-    height: 60%;
+
+.channel_totalRevenue > span {
+  font-size: 16px;
+}
+
+.totalRevenue, .distribution, .direct {
+  color: red;
+}
+
+.channelTop {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 48%;
+  border: 1px solid #eee;
+}
+
+.channel_twoTopPie {
+  width: 50%;
+  height: 100%;
+}
+
+.channelbottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  height: 48%;
+  border: 1px solid #eee;
 }
 
 
-/*舱位结构分析*/
-.spaceBar{
-    position: absolute;
-    left:0;
-    width: 39%;
-    height: 100%;
-    border:1px solid #eee;
+/*表格*/
+.scrollbar {
+  width:85%;
 }
-.spacePie{
-    position: absolute;
-    right:0;
-    width: 59%;
-    height: 100%;
-    border:1px solid #eee;
+.viewport {
+  height: 270px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
-/*旅客结构分析*/
-.travelerTop{
-    position: relative;
-    width: 100%;
-    height: 300px;
-    border:1px solid #eee;
+.overview {
+  margin-left:-2px;
+  left: 0;
+  list-style: none outside none;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-.travelerTop_Bar{
-    position: absolute;
-    left:0;
-    width: 40%;
-    height: 100%;
+.overview > table{
+  width:100%;
 }
-.travelerTop_Pie{
-    position: absolute;
-    left:41%;
-    width: 30%;
-    height: 100%;
-}
-.travelerTop_Pie2{
-    position: absolute;
-    right:0;
-    width: 30%;
-    height: 100%;
+.overview td{
+  padding-right:10px;
+  text-align: center;
 }
 
-.travelerBottom{
-    margin:20px 0;
-    position: relative;
-    width: 100%;
-    height: 400px;
+.detailsLayout {
+  margin-top: 20px;
 }
-.travelerBottm_Pie{
-    position: absolute;
-    left:0;
-    width: 49%;
-    height: 100%;
-    border:1px solid #eee;
+
+.detailsLayout > h3 {
+  padding-left: 10px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 100;
+  background: #B8EAFA;
 }
-.travelerBottm_Pie2{
-    position: absolute;
-    right:0;
-    width: 49%;
-    height: 100%;
-    border:1px solid #eee;
+
+.detailsLayout > table {
+  display: inline-table;
+  width: 15%;
+  background: #D8F3FC;
 }
+
+.detailsLayout tr {
+  height: 30px;
+}
+
+.overview > table > thead {
+  background: #D8F3FC;
+}
+
+.overview > table > tbody > tr:nth-child(odd) {
+  background: #f8f8f8;
+}
+
+.overview > table > tbody > tr:nth-child(even) {
+  background: #eee;
+}
+
+/*调价效果分析*/
+.tariffsTop {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+.tariffsBar {
+  position: absolute;
+  width: 49%;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+.tariffsPie {
+  position: absolute;
+  left: 24%;
+  width: 25%;
+  height: 60%;
+}
+
+.tariffsBar2 {
+  position: absolute;
+  right: 0;
+  width: 49%;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+.tariffsPie2 {
+  position: absolute;
+  right: 0;
+  width: 25%;
+  height: 60%;
+}
+
+.tariffsBottom {
+  margin: 20px 0;
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+.tariffsScatter {
+  position: absolute;
+  width: 49%;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+.tariffsLine {
+  position: absolute;
+  right: 0;
+  width: 49%;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+/*
+!*渠道单联程结构分析*!
+.interLineLeft {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  height: 70%;
+  border: 1px solid #eee;
+}
+
+.interLineLeft1 {
+  width: 100%;
+  height: 100%;
+}
+
+.interLineText {
+  padding: 1%;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 23%;
+  height: 28%;
+}
+
+.interLineText > p {
+  color: #999;
+  font-size: 14px;
+  line-height: 30px;
+  text-indent: 2em;
+}
+
+.interLineRight {
+  position: absolute;
+  left: 0;
+  width: 73%;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+.interLineChina {
+  width: 100%;
+  height: 100%;
+}
+
+.interLineBar {
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  width: 20%;
+  height: 60%;
+}
+
+!*舱位结构分析*!
+.spaceBar {
+  position: absolute;
+  left: 0;
+  width: 39%;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+.spacePie {
+  position: absolute;
+  right: 0;
+  width: 59%;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+!*旅客结构分析*!
+.travelerTop {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #eee;
+}
+
+.travelerTop_Bar {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  height: 100%;
+}
+
+.travelerTop_Pie {
+  position: absolute;
+  left: 41%;
+  width: 30%;
+  height: 100%;
+}
+
+.travelerTop_Pie2 {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  height: 100%;
+}
+
+.travelerBottom {
+  margin: 20px 0;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.travelerBottm_Pie {
+  position: absolute;
+  left: 0;
+  width: 49%;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+.travelerBottm_Pie2 {
+  position: absolute;
+  right: 0;
+  width: 49%;
+  height: 100%;
+  border: 1px solid #eee;
+}*/

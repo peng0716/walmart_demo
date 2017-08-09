@@ -1,4 +1,11 @@
 var submitData = {
+  displayBlock:{'display':'block'},
+  displayInline:{'display':'inline-block'},
+  displayNone:{'display':'none'},
+  min: 0,
+  max: 0,
+  subVal: '',
+  subText: '',
   initFormatter : '{b}<br />{a0}: {c0}' + '（万）',
   submitFormatter : '{b}<br />{a0}: {c0}' + '（万）' + '<br />{a1}: {c1}' + '（万）',
   initLegendData : ['By 建议价格'],
@@ -31,10 +38,8 @@ var submitData = {
   seriesData : function (data,identify) {
     var ary = [],text = ['sales','benefit','sell','salesArtificial','benefitArtificial','sellArtificial']
     data.map(function (item) {
-      debugger
-      console.log(item[text[identify]])
       ary.push(item[text[identify]] / 10000)
     })
     return ary
-  },
+  }
 }

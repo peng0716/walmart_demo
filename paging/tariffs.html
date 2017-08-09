@@ -1,55 +1,159 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>渠道运价结构分析</title>
-    <link rel="stylesheet" href="../css/public.css"/>
-    <link rel="stylesheet" href="../css/right.css"/>
+  <meta charset="UTF-8">
+  <title>渠道运价结构分析</title>
+  <link rel="stylesheet" href="../css/public.css"/>
+  <link rel="stylesheet" href="../css/right.css"/>
 </head>
 <body>
 <div class="page">
-    <!--全局筛选-->
-    <div class="pageSelect">
-        <!--三级筛选-->
-        <div class="floatLeft selectFilter">
-            <select class="oneSelect">
-                <option data-index="-1">--请选择--</option>
-            </select>
-            <select class="twoSelect">
-                <option data-index="-1">--请选择--</option>
-            </select>
-            <select class="threeSelect">
-                <option data-index="-1">--请选择--</option>
-            </select>
-            <input type="button" id="dateClear2" class="date_picker dateClear" value="清 空"/>
-            <input type="submit" id="dateSubmit2" class="date_picker dateClear" value="提 交"/>
-        </div>
-        <div class="floatRight detailsRight">
-            <select class="date_picker">
-                <option value="">请选择</option>
-                <option value="">昨日承运</option>
-                <option value="">昨日销售</option>
-                <option value="">过去一周销售</option>
-                <option value="">未来一周承运</option>
-            </select>
-        </div>
+  <div class="pageSelect">
+    <!--筛选-->
+    <div class="floatLeft selectFilter">
+      <select class="oneSelect" disabled="disabled" style="color:#bbb">
+        <option data-index="-1">生鲜部门</option>
+      </select>
+      <select class="twoSelect" disabled="disabled" style="color:#bbb">
+        <option data-index="-1">海鲜类</option>
+      </select>
     </div>
-    <!--详情-->
-    <div class="channelLayout">
-        <div class="tariffsTop">
-            <div id="tariffsBar" class="tariffsBar"></div>
-            <div id="tariffsPie" class="tariffsPie"></div>
-            <div id="tariffsBar2" class="tariffsBar2"></div>
-            <div id="tariffsPie2" class="tariffsPie2"></div>
-        </div>
-        <div class="tariffsBottom">
-            <div id="tariffsScatter" class="tariffsScatter"></div>
-            <div id="tariffsScatter2" class="tariffsLine"></div>
-        </div>
+  </div>
+  <!--详情-->
+  <div class="channelLayout">
+    <div class="tariffsTop">
+      <div id="tariffsBar" class="tariffsBar"></div>
+      <div id="tariffsBar2" class="tariffsBar2"></div>
     </div>
+    <div class="tariffsBottom">
+      <div id="tariffsScatter" class="tariffsScatter"></div>
+      <div id="tariffsScatter2" class="tariffsLine"></div>
+    </div>
+  </div>
+  <!--参考数据-->
+  <div class="detailsLayout">
+    <h3>参考数据</h3>
+    <table border="1" cellspacing="0" cellpadding="2" bordercolor="#fff">
+      <thead class="details_Left">
+        <tr style="height: 150px">
+          <th>调价前</th>
+        </tr>
+        <tr style="height: 120px">
+          <th>调价后</th>
+        </tr>
+      </thead>
+    </table>
+    <div class=" floatRight scrollbar">
+      <div class="viewport">
+        <div class="overview">
+          <table  border="1" cellspacing="0" cellpadding="2" bordercolor="#fff">
+            <thead>
+              <tr class="scrollbar1_width">
+                <th>Class</th>
+                <th>Item count</th>
+                <th>Higer%</th>
+                <th>Lower%</th>
+                <th>PI</th>
+                <th>平均票价</th>
+                <th>销量</th>
+                <th>销量比例</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>NBB</td>
+              <td>1999</td>
+              <td>50%</td>
+              <td>46%</td>
+              <td>1.2</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>KVI</td>
+              <td>2890</td>
+              <td>46%</td>
+              <td>49%</td>
+              <td>0.8</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Foreground</td>
+              <td>3211</td>
+              <td>38%</td>
+              <td>62%</td>
+              <td>0.5</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Background</td>
+              <td>1234</td>
+              <td>34%</td>
+              <td>66%</td>
+              <td>0.3</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>NBB</td>
+              <td>1999</td>
+              <td>55%</td>
+              <td>43%</td>
+              <td>1.5</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>KVI</td>
+              <td>2890</td>
+              <td>36%</td>
+              <td>59%</td>
+              <td>1</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Foreground</td>
+              <td>3211</td>
+              <td>48%</td>
+              <td>52%</td>
+              <td>0.6</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Background</td>
+              <td>1234</td>
+              <td>44%</td>
+              <td>56%</td>
+              <td>0.5</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="scrollbar">
+        <div class="track">
+          <div class="thumb"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
-<script type="text/javascript" src="../js/echarts.js"></script>
+<script type="text/javascript" src="../js/echarts.min.js"></script>
 <script type="text/javascript" src="../js/tariffs.js"></script>
 </html>

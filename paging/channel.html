@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>渠道结构分析</title>
+  <title>商品价格调整</title>
   <link rel="stylesheet" href="../css/public.css"/>
   <link rel="stylesheet" href="../css/right.css"/>
 </head>
@@ -14,29 +14,72 @@
     <div class="floatLeft selectFilter">
       <select class="oneSelect">
         <option data-index="-1">中南片区</option>
+        <option data-index="-1">华东片区</option>
+        <option data-index="-1">中原片区</option>
+        <option data-index="-1">云贵渝片区</option>
+        <option data-index="-1">成都片区</option>
+        <option data-index="-1">西北片区</option>
+        <option data-index="-1">北方片区</option>
       </select>
       <select class="twoSelect">
         <option data-index="-1">深圳门店</option>
+        <option data-index="-1">广州门店</option>
+        <option data-index="-1">海口门店</option>
+        <option data-index="-1">三亚门店</option>
+        <option data-index="-1">南宁门店</option>
       </select>
       <select class="twoSelect">
         <option data-index="-1">食品类</option>
+        <option data-index="-1">生鲜类</option>
+        <option data-index="-1">用品类</option>
+        <option data-index="-1">蔬菜类</option>
       </select>
       <select class="threeSelect">
         <option value="0">咖啡</option>
         <option value="1">薯片</option>
       </select>
-      <input type="text" name="" id="select_text">
-      <input type="submit" id="dateSubmit2" class="date_picker dateClear" value="提 交"/>
+      <input type="text" class="select_text" id="select_text">
+      <input type="submit" id="dateSubmit2" class="date_picker dateClear" value="调 价"/>
     </div>
     <div class="floatRight detailsRight">
-      <select class="date_picker">
+      <!--<select class="date_picker">
         <option value="">请选择</option>
         <option value="">昨日承运</option>
         <option value="">昨日销售</option>
         <option value="">过去一周销售</option>
         <option value="">未来一周承运</option>
       </select>
-      <a target="right" href="../paging/channelDetails.html" class="date_picker dateClear details">人工调价</a>
+      <a target="right" href="../paging/channelDetails.html" class="date_picker dateClear details">人工调价</a>-->
+      <a id="artificiAldjustment" class="date_picker dateClear details">调价设置</a>
+    </div>
+  </div>
+  <div class="artificiAldjustment">
+    <div class="selectFilter displayInlineBlock">
+      <span class="pricing_title">价格目标</span>
+      <select class="oneSelectRule">
+        <option data-index="-1">--请选择--</option>
+      </select>
+    </div>
+    <div class="selectFilter displayInlineBlock">
+      <span class="pricing_title marginLeft">价格规则</span>
+      <!--三级筛选-->
+      <select class="twoSelectRule">
+        <option data-index="-1">--请选择--</option>
+      </select>
+      <select class="threeSelectRule">
+        <option data-index="-1">--请选择--</option>
+      </select>
+      <select class="fourSelectRule">
+        <option value="0">--请选择--</option>
+        <option value="1">竞品一</option>
+        <option value="2">竞品二</option>
+      </select>
+      <input type="text" class="select_text" value="" id="pricing_text">
+      <input type="submit" id="artificiAldjustmentSubmit" class="date_picker dateClear" value="提 交"/>
+    </div>
+    <div id="optimal" class="selectFilter">
+      <span class="pricing_title">推荐最优价格</span>
+      <input id="changeSub" type="text" class="select_text" placeholder="最优价格">
     </div>
   </div>
   <!--KPI-->
@@ -68,7 +111,7 @@
     </div>
   </div>
   <!--结构图-->
-  <div class="channelLayout">
+  <div class="channelLayout" style="height: 310px">
     <div class="pageDetail">
       <!--仪表盘-->
       <div class="chinaBar">
@@ -83,7 +126,7 @@
 </div>
 </body>
 <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
-<script type="text/javascript" src="../js/echarts.js"></script>
+<script type="text/javascript" src="../js/echarts.min.js"></script>
 <script type="text/javascript" src="../js/cfg.js"></script>
 <script type="text/javascript" src="../js/channel.js"></script>
 </html>

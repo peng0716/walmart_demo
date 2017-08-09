@@ -1,8 +1,90 @@
 $(function () {
   $.getJSON('../json/home.json')
     .then(function (res) {
-      var provinces = res.selectOne;
+      var provinces = res.selectOne;  //筛选数据
       var allDate;
+
+      /*人工调价点击事件*/
+      $('#artificiAldjustment').on('click',function () {
+        $('#optimal').css(submitData.displayNone)
+        $('.artificiAldjustment').toggle(1000)
+      })
+
+      //三级下拉菜单
+      var options = provinces.map(function (item, index) {
+        return '<option value="' + item.value + '" data-index="' + index + '">' + item.name + '</option>';
+      })
+
+      $('.oneSelectRule').html('<option data-index="-1">--请选择--</option>' + options);
+
+      $('.oneSelectRule').on('change', function () {
+
+        var index = $(this).find('option:selected').data('index');
+
+        if (index == -1) {
+          $('.twoSelectRule').html('<option data-index="-1">--请选择--</option>');
+          return;
+        }
+
+        var provinceIevel = provinces[index]['provinceIevel'];
+
+        var option_dep = provinceIevel.map(function (item, index) {
+          return '<option value="' + item.value + '" data-index="' + index + '">' + item.name + '</option>';
+        })
+        $('.twoSelectRule').html('<option data-index="-1">--请选择--</option>' + option_dep);
+      })
+
+      $('.twoSelectRule').on('change', function () {
+        var index = $(this).find('option:selected').data('index');
+        var p_index = $('.oneSelectRule').find('option:selected').data('index');
+
+        if (index == -1) {
+          $('.twoSelectRule').html('<option data-index="-1">--请选择--</option>');
+          return;
+        }
+
+        var area = provinces[p_index]['provinceIevel'][index]['department'];
+        if (!provinces[p_index]['provinceIevel'][index]['department']) {
+          $('.threeSelectRule').css('display', 'none');
+          return;
+        } else {
+          $('.threeSelectRule').css('display', 'inline-block');
+          var area_dep_option = area.map(function (item, index) {
+            return '<option value="' + item.value + '" data-index="' + index + '">' + item.name + '</option>';
+          })
+          $('.threeSelectRule').html('<option data-index="-1">--请选择--</option>' + area_dep_option);
+        }
+
+      })
+
+      // 人工调价第三级 选择事件
+      $('.threeSelectRule').change(function(){
+        var text = $('.threeSelectRule option:selected').text()
+        if(text == '百分比' || text == '具体金额'){
+          $('.fourSelectRule').val('0')
+          $('.fourSelectRule').css(submitData.displayNone)
+          $('#pricing_text').css(submitData.displayInline)
+        }else if(text == '最大竞争者' || text == '最小竞争者'){
+          $('#pricing_text').val('')
+          $('#pricing_text').css(submitData.displayNone)
+          $('.fourSelectRule').css(submitData.displayInline)
+        }
+      })
+
+      // 人工调价 提交按钮
+      $('#artificiAldjustmentSubmit').on('click',function () {
+        var selectText = $('.fourSelectRule').val()
+        var inputText = $('#pricing_text').val()
+        if(selectText != '0' || inputText != ''){
+          submitData.min = Math.floor(Math.random()*49+3),
+          submitData.max = Math.floor(Math.random()*50+50),
+          place = submitData.min + '—' + submitData.max + '之间'
+          $('#optimal > input').attr('placeholder',place)
+          $('#optimal').css(submitData.displayInline)
+        } else {
+          alert('请先选择条件！！！')
+        }
+      })
 
       //KPI
       $('.inventory').html(res.init_KPI.inventory + '万件');
@@ -185,10 +267,30 @@ $(function () {
       };
       homeLine.setOption(lineOption);
 
+      // 人工调价 提交
+      $('#changeSub').change(function () {
+        var changeText = $('#changeSub').val()
+        if(changeText > submitData.min && changeText < submitData.max){
+          $('#select_text').val(changeText)
+          submitData.subVal = $('.threeSelect').val()
+          submitData.subText = $('#select_text').val()
+          sub(submitData.subVal,submitData.subText)
+        }else if(changeText != ''){
+          alert('请输入最优价格区间值！！！')
+        }else{
+          $('#select_text').val('')
+        }
+      })
+
       //提交
       $('#dateSubmit2').on('click', function () {
-        var val = $('.threeSelect').val()
-        var text = $('#select_text').val()
+        submitData.subVal = $('.threeSelect').val()
+        submitData.subText = $('#select_text').val()
+        sub(submitData.subVal,submitData.subText)
+      })
+
+      function sub(val,text) {
+        debugger
         if(val == '0' && text != ''){  //输入框有内容
           lineZHOption.tooltip.formatter = lineXSOption.tooltip.formatter = lineOption.tooltip.formatter = submitData.submitFormatter
           lineZHOption.legend.data = lineXSOption.legend.data = lineOption.legend.data = submitData.submitLegendData
@@ -234,13 +336,6 @@ $(function () {
           lineOption.series[0].data = submitData.seriesData(res.allDateChips2,2)
           lineOption.series[1] = submitData.seriesText2
           lineOption.series[1].data = submitData.seriesData(res.allDateChips2,5)
-          /*
-          lineZHOption.tooltip.formatter = submitData.submitFormatter
-          lineZHOption.legend.data = submitData.submitLegendData
-          lineZHOption.xAxis.data = submitData.xData(res.allDate2)
-          lineZHOption.series[0].data = submitData.seriesData(res.allDateChips2,0)
-          lineZHOption.series[1] = submitData.seriesText
-          lineZHOption.series[1].data = submitData.seriesData(res.allDateChips2,3)*/
         }else {
           lineZHOption.tooltip.formatter = lineXSOption.tooltip.formatter = lineOption.tooltip.formatter = submitData.initFormatter
           lineZHOption.legend.data = lineXSOption.legend.data = lineOption.legend.data = submitData.initLegendData
@@ -258,8 +353,6 @@ $(function () {
         homeLineZH.setOption(lineZHOption);
         homeLineXS.setOption(lineXSOption);
         homeLine.setOption(lineOption);
-      })
-
-
+      }
     })
 })
