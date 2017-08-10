@@ -21,7 +21,7 @@
             <option value="2">新产品加入</option>
           </select>
           <span class="pricing_title">预警状态</span>
-          <select class="twoSelect">
+          <select id="warningState" class="twoSelect">
             <option value="0">Completed</option>
             <option value="1">Ignored</option>
             <option value="2">InReview</option>
@@ -31,10 +31,10 @@
         </div>
         <!--筛选默认-->
         <div class="floatRight selectFilter">
-          <select class="oneSelect" disabled="disabled" style="color:#bbb">
+          <select id="categoryId" class="oneSelect" disabled="disabled" style="color:#bbb">
             <option data-index="-1">食品类</option>
           </select>
-          <select class="twoSelect" disabled="disabled" style="color:#bbb">
+          <select id="itemNameId" class="twoSelect" disabled="disabled" style="color:#bbb">
             <option data-index="-1">咖啡</option>
           </select>
         </div>
@@ -59,53 +59,27 @@
               <td>咖啡</td>
               <td>食品类</td>
               <td>Dept_01</td>
-              <td><input type="submit" value="01"></td>
+              <td><input onclick="warningSub($(this))" type="submit" class="warningSub" value="01"></td>
               <td>2017-08-10</td>
-              <td>Completed</td>
+              <td class="stateData">Completed</td>
             </tr>
             <tr>
               <td>02</td>
               <td>薯片</td>
               <td>食品类</td>
               <td>Dept_02</td>
-              <td><input type="submit" value="02"></td>
+              <td><input onclick="warningSub($(this))" type="submit" class="warningSub" value="02"></td>
               <td>2017-08-09</td>
-              <td>Completed</td>
+              <td class="stateData">Completed</td>
             </tr>
             <tr>
               <td>01</td>
-              <td>咖啡</td>
-              <td>食品类</td>
+              <td>水杯</td>
+              <td>用品类</td>
               <td>Dept_01</td>
-              <td><input type="submit" value="03"></td>
+              <td><input onclick="warningSub($(this))" type="submit" class="warningSub" value="03"></td>
               <td>2017-08-10</td>
-              <td>Completed</td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>薯片</td>
-              <td>食品类</td>
-              <td>Dept_02</td>
-              <td><input type="submit" value="04"></td>
-              <td>2017-08-09</td>
-              <td>Completed</td>
-            </tr><tr>
-              <td>01</td>
-              <td>咖啡</td>
-              <td>食品类</td>
-              <td>Dept_01</td>
-              <td><input type="submit" value="05"></td>
-              <td>2017-08-10</td>
-              <td>Completed</td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>薯片</td>
-              <td>食品类</td>
-              <td>Dept_02</td>
-              <td><input type="submit" value="06"></td>
-              <td>2017-08-09</td>
-              <td>Completed</td>
+              <td class="stateData">Completed</td>
             </tr>
           </tbody>
         </table>
@@ -124,5 +98,6 @@
 </body>
 <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
 <script type="text/javascript" src="../js/echarts.min.js"></script>
+<script type="text/javascript" src="../js/cfg.js"></script>
 <script type="text/javascript" src="../js/right.js"></script>
 </html>

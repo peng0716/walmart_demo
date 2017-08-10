@@ -5,7 +5,7 @@
             "type": "Feature",
             "id": "db",
             "properties": {
-                "name": "北方片区",
+                "name": "zone1",
                 "cp": [
                     118.1445,
                     43.5156
@@ -2784,7 +2784,7 @@
             "type": "Feature",
             "id": "hb",
             "properties": {
-                "name": "成都片区",
+                "name": "zone2",
                 "cp": [
                     99.1551,
                     30.2539
@@ -3905,7 +3905,7 @@
             "type": "Feature",
             "id": "hd",
             "properties": {
-                "name": "华东片区",
+                "name": "zone3",
                 "cp": [
                     119.4648,
                     29.2891
@@ -5392,7 +5392,7 @@
             "type": "Feature",
             "id": "hn",
             "properties": {
-                "name": "中南片区",
+                "name": "zone4",
                 "cp": [
                     111.2813,
                     23.6426
@@ -6193,7 +6193,7 @@
             "type": "Feature",
             "id": "hz",
             "properties": {
-                "name": "中原片区",
+                "name": "zone5",
                 "cp": [
                     112.8,
                     31.1572
@@ -7076,7 +7076,7 @@
             "type": "Feature",
             "id": "xn",
             "properties": {
-                "name": "云贵渝片区",
+                "name": "zone6",
                 "cp": [
                     100.9999,
                     25.2904
@@ -8183,7 +8183,7 @@
             "type": "Feature",
             "id": "xb",
             "properties": {
-                "name": "西北片区",
+                "name": "zone7",
                 "cp": [
                     91.5996,
                     39.6396

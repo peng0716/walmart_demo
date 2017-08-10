@@ -197,6 +197,20 @@ html, body {
 .warningTable > tbody > tr:nth-child(even){
   background: #f0f0f0;
 }
+.warningSub {
+  padding: 0 10px;
+  line-height: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+  outline: none;
+}
+.warningSub:hover {
+  color:#fff;
+  background-color: #FF5F3E;
+  border-color: #FF5F3E;
+}
 
 
 /*KPI*/

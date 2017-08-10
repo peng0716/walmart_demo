@@ -4,6 +4,7 @@ var submitData = {
   displayNone:{'display':'none'},
   min: 0,
   max: 0,
+  testRandom: 0,
   subVal: '',
   subText: '',
   initFormatter : '{b}<br />{a0}: {c0}' + '（万）',

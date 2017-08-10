@@ -302,7 +302,7 @@
   ],
   "provinceIevel": [
     {
-      "name": "华东片区",
+      "name": "zone3",
       "value": "442100",
       "areaSales": "478080",
       "areaProxy": "246600",
@@ -371,7 +371,7 @@
       ]
     },
     {
-      "name": "云贵渝片区",
+      "name": "zone6",
       "value": "442100",
       "areaSales": "350232",
       "areaProxy": "183420",
@@ -409,7 +409,7 @@
       ]
     },
     {
-      "name": "北方片区",
+      "name": "zone1",
       "value": "735230",
       "areaSales": "495230",
       "areaProxy": "370492",
@@ -453,7 +453,7 @@
       ]
     },
     {
-      "name": "成都片区",
+      "name": "zone2",
       "value": "1212645",
       "areaSales": "611265",
       "areaProxy": "411264",
@@ -491,7 +491,7 @@
       ]
     },
     {
-      "name": "西北片区",
+      "name": "zone7",
       "value": "851110",
       "areaSales": "325110",
       "areaProxy": "159905",
@@ -535,7 +535,7 @@
       ]
     },
     {
-      "name": "中南片区",
+      "name": "zone4",
       "value": "442100",
       "areaSales": "604210",
       "areaProxy": "381862",
@@ -573,7 +573,7 @@
       ]
     },
     {
-      "name": "中原片区",
+      "name": "zone5",
       "value": "442100",
       "areaSales": "556890",
       "areaProxy": "342030",
