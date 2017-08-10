@@ -44,7 +44,6 @@ $(document).ready(function () {
       };
       channelForce.setOption(channelForce_option);
 
-
       //中国地图
       $.ajax({
         url: '../json/geoJson/area.geo.json',
@@ -57,7 +56,7 @@ $(document).ready(function () {
       var chinaOption = {
         color: ['#FF4455', '#568EFD'],
         title: {
-          text: '全国片区销售收入分布',
+          text: '全国各片区商品价格分布',
           top: 10,
           left: 10,
         },
@@ -110,7 +109,7 @@ $(document).ready(function () {
           formatter: '{b}<br />{a0}: {c0}' + '<br />{a1}: {c1}'
         },
         legend: {
-          data: ['现价', '成本'],
+          data: ['现价', '利润'],
           top: 25,
         },
         grid: {
@@ -153,7 +152,7 @@ $(document).ready(function () {
             })
           },
           {
-            name: '成本',
+            name: '利润',
             type: 'line',
             yAxisIndex: 1,
             label: {
@@ -230,6 +229,12 @@ $(document).ready(function () {
           homeBarClick(data)
         }
       });
+
+
+      /*预警详情点击事件*/
+      $('#warningParticulars').on('click',function () {
+        $('.warningParticulars').toggle(1000)
+      })
 
     })
 })

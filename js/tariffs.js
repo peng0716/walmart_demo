@@ -232,7 +232,7 @@ $(function () {
         yAxis: [
           {
             type: 'value',
-            name: "万元",
+            name: "销售量/万元",
             splitLine: {
               show: false
             }

@@ -3,36 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
-  <link rel="stylesheet" href="../css/index.css"/>
+  <link rel="stylesheet" href="../css/public.css"/>
   <link rel="stylesheet" href="../css/right.css"/>
 </head>
 <body>
 <div class="page">
-  <!--结构图-->
-  <div id="channelForce" class="channel_force"></div>
   <div class="pageDetail">
-    <!--仪表盘-->
-    <div class="chinaBar">
-      <div class="floatLeft homeLayout">
-        <div class="pageSelect">
-          <!--筛选-->
-          <div class="floatLeft selectFilter">
-            <select class="oneSelect" disabled="disabled" style="color:#bbb">
-              <option data-index="-1">食品类</option>
-            </select>
-            <select class="twoSelect" disabled="disabled" style="color:#bbb">
-              <option data-index="-1">咖啡</option>
-            </select>
-          </div>
+    <!--地图-->
+    <div class="floatLeft homeLayout">
+      <div class="pageSelect">
+        <!--筛选-->
+        <div class="floatLeft selectFilter">
+          <span class="pricing_title">预警类型</span>
+          <select class="oneSelect">
+            <option value="0">新成本</option>
+            <option value="1">新竞争对手价格</option>
+            <option value="2">新产品加入</option>
+          </select>
+          <span class="pricing_title">预警状态</span>
+          <select class="twoSelect">
+            <option value="0">Completed</option>
+            <option value="1">Ignored</option>
+            <option value="2">InReview</option>
+            <option value="3">New</option>
+          </select>
+          <input type="submit" id="warningParticulars" class="date_picker dateClear" value="预警详情"/>
         </div>
-        <div id="homeChina" class="floatLeft homeChina"></div>
-        <div id="homeBar" class="floatLeft homeBar"></div>
-        <div class="homeText">
-          <p>目前，代理费与销售收入成正比例关系。随着代理费率向定额方向改革，这种比例关系将被打破。</p>
+        <!--筛选默认-->
+        <div class="floatRight selectFilter">
+          <select class="oneSelect" disabled="disabled" style="color:#bbb">
+            <option data-index="-1">食品类</option>
+          </select>
+          <select class="twoSelect" disabled="disabled" style="color:#bbb">
+            <option data-index="-1">咖啡</option>
+          </select>
         </div>
       </div>
+      <!--预警详情-->
+      <div class="warningParticulars">
+        <table class="warningTable">
+          <thead>
+            <tr>
+              <th>Item ID</th>
+              <th>Item Name</th>
+              <th>Category</th>
+              <th>Dept</th>
+              <th>Location Count</th>
+              <th>Alert Date</th>
+              <th>Alert Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01</td>
+              <td>咖啡</td>
+              <td>食品类</td>
+              <td>Dept_01</td>
+              <td><input type="submit" value="01"></td>
+              <td>2017-08-10</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>薯片</td>
+              <td>食品类</td>
+              <td>Dept_02</td>
+              <td><input type="submit" value="02"></td>
+              <td>2017-08-09</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>咖啡</td>
+              <td>食品类</td>
+              <td>Dept_01</td>
+              <td><input type="submit" value="03"></td>
+              <td>2017-08-10</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>薯片</td>
+              <td>食品类</td>
+              <td>Dept_02</td>
+              <td><input type="submit" value="04"></td>
+              <td>2017-08-09</td>
+              <td>Completed</td>
+            </tr><tr>
+              <td>01</td>
+              <td>咖啡</td>
+              <td>食品类</td>
+              <td>Dept_01</td>
+              <td><input type="submit" value="05"></td>
+              <td>2017-08-10</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td>薯片</td>
+              <td>食品类</td>
+              <td>Dept_02</td>
+              <td><input type="submit" value="06"></td>
+              <td>2017-08-09</td>
+              <td>Completed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="homeChina" class="floatLeft homeChina"></div>
+      <div id="homeBar" class="floatLeft homeBar"></div>
+      <!--<div class="homeText">
+        <p>目前，代理费与销售收入成正比例关系。随着代理费率向定额方向改革，这种比例关系将被打破。</p>
+      </div>-->
     </div>
   </div>
+  <div class="clear"></div>
+  <!--结构图-->
+  <div id="channelForce" class="marginTop channel_force"></div>
 </div>
 </body>
 <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>

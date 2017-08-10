@@ -29,7 +29,7 @@ html, body {
 
 /*三级筛选*/
 .chinaBar {
-  margin: 10px 0;
+  margin: 20px 0;
   position: relative;
 }
 
@@ -65,7 +65,6 @@ html, body {
 
 .homeLayout {
   position: relative;
-  margin-top: 20px;
   width: 100%;
   background: #fafafa;
 }
@@ -112,7 +111,6 @@ html, body {
 }
 
 .dateClear {
-  width: 60px;
   color: #888;
   cursor: pointer;
 }
@@ -160,11 +158,11 @@ html, body {
   outline: none;
 }
 
-/*人工调价*/
-.artificiAldjustment {
+/*人工调价 预警详情*/
+.artificiAldjustment,.warningParticulars {
   display: none;
   padding:10px;
-  background-color: #fafafa;
+  background-color: #eee;
 }
 .pricing_title {
   display: inline-block;
@@ -175,6 +173,29 @@ html, body {
 }
 #pricing_text,.fourSelectRule,#optimal {
   display: none;
+}
+
+/*预警表格*/
+.warningTable {
+  width:100%;
+  border:1px solid #fff;
+  border-collapse: collapse;
+}
+.warningTable th {
+  line-height: 30px;
+  border:1px solid #fff;
+  background-color: #D8F3FC;
+}
+.warningTable td {
+  line-height: 24px;
+  border:1px solid #fff;
+  text-align: center;
+}
+.warningTable > tbody > tr:nth-child(odd){
+  background: #f8f8f8;
+}
+.warningTable > tbody > tr:nth-child(even){
+  background: #f0f0f0;
 }
 
 
@@ -393,124 +414,3 @@ html, body {
   border: 1px solid #eee;
 }
 
-/*
-!*渠道单联程结构分析*!
-.interLineLeft {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 25%;
-  height: 70%;
-  border: 1px solid #eee;
-}
-
-.interLineLeft1 {
-  width: 100%;
-  height: 100%;
-}
-
-.interLineText {
-  padding: 1%;
-  position: absolute;
-  top: 10px;
-  right: 0;
-  width: 23%;
-  height: 28%;
-}
-
-.interLineText > p {
-  color: #999;
-  font-size: 14px;
-  line-height: 30px;
-  text-indent: 2em;
-}
-
-.interLineRight {
-  position: absolute;
-  left: 0;
-  width: 73%;
-  height: 100%;
-  border: 1px solid #eee;
-}
-
-.interLineChina {
-  width: 100%;
-  height: 100%;
-}
-
-.interLineBar {
-  position: absolute;
-  right: 20px;
-  bottom: 50px;
-  width: 20%;
-  height: 60%;
-}
-
-!*舱位结构分析*!
-.spaceBar {
-  position: absolute;
-  left: 0;
-  width: 39%;
-  height: 100%;
-  border: 1px solid #eee;
-}
-
-.spacePie {
-  position: absolute;
-  right: 0;
-  width: 59%;
-  height: 100%;
-  border: 1px solid #eee;
-}
-
-!*旅客结构分析*!
-.travelerTop {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  border: 1px solid #eee;
-}
-
-.travelerTop_Bar {
-  position: absolute;
-  left: 0;
-  width: 40%;
-  height: 100%;
-}
-
-.travelerTop_Pie {
-  position: absolute;
-  left: 41%;
-  width: 30%;
-  height: 100%;
-}
-
-.travelerTop_Pie2 {
-  position: absolute;
-  right: 0;
-  width: 30%;
-  height: 100%;
-}
-
-.travelerBottom {
-  margin: 20px 0;
-  position: relative;
-  width: 100%;
-  height: 400px;
-}
-
-.travelerBottm_Pie {
-  position: absolute;
-  left: 0;
-  width: 49%;
-  height: 100%;
-  border: 1px solid #eee;
-}
-
-.travelerBottm_Pie2 {
-  position: absolute;
-  right: 0;
-  width: 49%;
-  height: 100%;
-  border: 1px solid #eee;
-}*/
