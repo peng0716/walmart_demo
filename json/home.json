@@ -6,7 +6,7 @@
   "selectProxy": "1256405",
   "links": [
     {
-      "source": "总库存",
+      "source": "商品总数",
       "target": "PI > 1",
       "value": "2700"
     },
@@ -86,7 +86,7 @@
       "value": "300"
     },
     {
-      "source": "总库存",
+      "source": "商品总数",
       "target": "PI < 1",
       "value": "2900"
     },
@@ -168,7 +168,7 @@
   ],
   "nodes": [
     {
-      "name": "总库存",
+      "name": "商品总数",
       "value": "5600"
     },
     {

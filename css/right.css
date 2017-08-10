@@ -15,6 +15,9 @@ html, body {
 .displayInlineBlock {
   display: inline-block;
 }
+.bgEEE {
+  background-color: #eee;
+}
 
 .page {
   padding: 20px;

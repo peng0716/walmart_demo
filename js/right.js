@@ -8,7 +8,7 @@
   var channelForce = echarts.init(document.getElementById('channelForce'));
   var channelForce_option = {
     title: {
-      text: '商品库存结构分析',
+      text: '商品竞争状况分析',
       left: 10,
       top: 10
     },

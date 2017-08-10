@@ -76,11 +76,15 @@ $(function () {
         var selectText = $('.fourSelectRule').val()
         var inputText = $('#pricing_text').val()
         if(selectText != '0' || inputText != ''){
-          submitData.min = Math.floor(Math.random()*49+3),
-          submitData.max = Math.floor(Math.random()*50+50),
-          place = submitData.min + '—' + submitData.max + '之间'
-          $('#optimal > input').attr('placeholder',place)
+          submitData.recommend = Math.floor(Math.random()*10+65)
+          submitData.cycle = Math.floor(Math.random()*3+1)
+          $('#input1').attr('placeholder',submitData.recommend)
+          $('#input2').attr('placeholder',submitData.cycle + '个月')
           $('#optimal').css(submitData.displayInline)
+          $('#select_text').val(submitData.recommend)
+          submitData.subVal = $('.threeSelect').val()
+          submitData.subText = $('#select_text').val()
+          sub(submitData.subVal,submitData.subText)
         } else {
           alert('请先选择条件！！！')
         }
@@ -268,7 +272,7 @@ $(function () {
       homeLine.setOption(lineOption);
 
       // 人工调价 提交
-      $('#changeSub').change(function () {
+      /*$('#changeSub').change(function () {
         var changeText = $('#changeSub').val()
         if(changeText > submitData.min && changeText < submitData.max){
           $('#select_text').val(changeText)
@@ -280,7 +284,7 @@ $(function () {
         }else{
           $('#select_text').val('')
         }
-      })
+      })*/
 
       //提交
       $('#dateSubmit2').on('click', function () {
@@ -290,7 +294,6 @@ $(function () {
       })
 
       function sub(val,text) {
-        debugger
         if(val == '0' && text != ''){  //输入框有内容
           lineZHOption.tooltip.formatter = lineXSOption.tooltip.formatter = lineOption.tooltip.formatter = submitData.submitFormatter
           lineZHOption.legend.data = lineXSOption.legend.data = lineOption.legend.data = submitData.submitLegendData
