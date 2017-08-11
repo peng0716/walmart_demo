@@ -67,8 +67,8 @@
       formatter: '{a}：<br />{b}：{c}',
     },
     visualMap: {
-      min: 0.2,
-      max: 1.2,
+      min: 20,
+      max: 120,
       left: 'left',
       top: 'bottom',
       text: ['高', '低'],           // 文本，默认为数值文本
@@ -92,7 +92,7 @@
           }
         },
         data: res.provinceIevel.map(function (item) {
-          var value = item.value / 1000000
+          var value = item.value / 10000
           return {name: item.name, value: value}
         })
       }
@@ -247,11 +247,11 @@
     $('#itemNameId option:selected').text(itemName)
     submitData.testRandom = (Math.random()*3+1).toFixed(2)
     /*地图*/
-    chinaOption.visualMap.min = 0.2 * submitData.testRandom
-    chinaOption.visualMap.max = 1.2 * submitData.testRandom
+    chinaOption.visualMap.min = 20 * submitData.testRandom
+    chinaOption.visualMap.max = 120 * submitData.testRandom
     console.log(chinaOption.visualMap.max)
     chinaOption.series[0].data = res.provinceIevel.map(function (item) {
-      var value = (item.value / 1000000 * submitData.testRandom).toFixed(3)
+      var value = (item.value / 10000 * submitData.testRandom).toFixed(3)
       return {name: item.name, value: value}
     })
     /*柱状图*/

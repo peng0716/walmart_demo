@@ -208,12 +208,12 @@ $(function () {
         },
         tooltip: {
           trigger: 'axis',
-          formatter: '{b}<br />{a0}: {c0}' + '（万）' + '<br />{a1}: {c1}' + '（万）'
+          formatter: '{b}<br />{a0}: {c0}' + '（万）' + '<br />{a1}: {c1}' + '（万）' + '<br />{a2}: {c2}' + '（万）'
         },
         legend: {
           top: 10,
           left: '40%',
-          data: ['真实数据','预测数据']
+          data: ['真实数据','预测数据','GAP']
         },
         grid: {
           top: '33%',
@@ -245,7 +245,7 @@ $(function () {
             smooth: true,
             yAxisIndex: 0,
             data: res.effectAppraisal.map(function (item) {
-              return item.sales / 10000
+              return item.sales
             })
           },
           {
@@ -254,9 +254,18 @@ $(function () {
             smooth: true,
             yAxisIndex: 0,
             data: res.effectAppraisal.map(function (item) {
-              return item.sell / 10000
+              return item.sell
             })
-          }
+          },
+            {
+              name: 'GAP',
+              type: 'line',
+              smooth: true,
+              yAxisIndex: 0,
+              data: res.effectAppraisal.map(function (item) {
+                return item.differenceValue
+              })
+            }
         ]
       };
       tariffsScatter2.setOption(tariffsScatterOption2);

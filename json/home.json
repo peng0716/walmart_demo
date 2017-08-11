@@ -7,162 +7,162 @@
   "links": [
     {
       "source": "商品总数",
-      "target": "PI > 1",
+      "target": "PI > 100",
       "value": "2700"
     },
     {
-      "source": "PI > 1",
-      "target": "NBB(PI > 1)",
+      "source": "PI > 100",
+      "target": "NBB(PI > 100)",
       "value": "800"
     },
     {
-      "source": "NBB(PI > 1)",
-      "target": "食品类NBB(PI > 1)",
+      "source": "NBB(PI > 100)",
+      "target": "食品类NBB(PI > 100)",
       "value": "240"
     },
     {
-      "source": "NBB(PI > 1)",
-      "target": "用品类NBB(PI > 1)",
+      "source": "NBB(PI > 100)",
+      "target": "用品类NBB(PI > 100)",
       "value": "160"
     },
     {
-      "source": "NBB(PI > 1)",
-      "target": "生鲜类NBB(PI > 1)",
+      "source": "NBB(PI > 100)",
+      "target": "生鲜类NBB(PI > 100)",
       "value": "280"
     },
     {
-      "source": "NBB(PI > 1)",
-      "target": "蔬菜类NBB(PI > 1)",
+      "source": "NBB(PI > 100)",
+      "target": "蔬菜类NBB(PI > 100)",
       "value": "120"
     },
     {
-      "source": "PI > 1",
-      "target": "KVI(PI > 1)",
+      "source": "PI > 100",
+      "target": "KVI(PI > 100)",
       "value": "1000"
     },
     {
-      "source": "KVI(PI > 1)",
-      "target": "食品类KVI(PI > 1)",
+      "source": "KVI(PI > 100)",
+      "target": "食品类KVI(PI > 100)",
       "value": "200"
     },
     {
-      "source": "KVI(PI > 1)",
-      "target": "用品类KVI(PI > 1)",
+      "source": "KVI(PI > 100)",
+      "target": "用品类KVI(PI > 100)",
       "value": "220"
     },
     {
-      "source": "KVI(PI > 1)",
-      "target": "生鲜类KVI(PI > 1)",
+      "source": "KVI(PI > 100)",
+      "target": "生鲜类KVI(PI > 100)",
       "value": "280"
     },
     {
-      "source": "KVI(PI > 1)",
-      "target": "蔬菜类KVI(PI > 1)",
+      "source": "KVI(PI > 100)",
+      "target": "蔬菜类KVI(PI > 100)",
       "value": "300"
     },
     {
-      "source": "PI > 1",
-      "target": "ForeGround(PI > 1)",
+      "source": "PI > 100",
+      "target": "ForeGround(PI > 100)",
       "value": "900"
     },
     {
-      "source": "ForeGround(PI > 1)",
-      "target": "食品类ForeGround(PI > 1)",
+      "source": "ForeGround(PI > 100)",
+      "target": "食品类ForeGround(PI > 100)",
       "value": "200"
     },
     {
-      "source": "ForeGround(PI > 1)",
-      "target": "用品类ForeGround(PI > 1)",
+      "source": "ForeGround(PI > 100)",
+      "target": "用品类ForeGround(PI > 100)",
       "value": "220"
     },
     {
-      "source": "ForeGround(PI > 1)",
-      "target": "生鲜类ForeGround(PI > 1)",
+      "source": "ForeGround(PI > 100)",
+      "target": "生鲜类ForeGround(PI > 100)",
       "value": "180"
     },
     {
-      "source": "ForeGround(PI > 1)",
-      "target": "蔬菜类ForeGround(PI > 1)",
+      "source": "ForeGround(PI > 100)",
+      "target": "蔬菜类ForeGround(PI > 100)",
       "value": "300"
     },
     {
       "source": "商品总数",
-      "target": "PI < 1",
+      "target": "PI < 100",
       "value": "2900"
     },
     {
-      "source": "PI < 1",
-      "target": "NBB(PI < 1)",
+      "source": "PI < 100",
+      "target": "NBB(PI < 100)",
       "value": "1000"
     },
     {
-      "source": "NBB(PI < 1)",
-      "target": "食品类NBB(PI < 1)",
+      "source": "NBB(PI < 100)",
+      "target": "食品类NBB(PI < 100)",
       "value": "240"
     },
     {
-      "source": "NBB(PI < 1)",
-      "target": "用品类NBB(PI < 1)",
+      "source": "NBB(PI < 100)",
+      "target": "用品类NBB(PI < 100)",
       "value": "160"
     },
     {
-      "source": "NBB(PI < 1)",
-      "target": "生鲜类NBB(PI < 1)",
+      "source": "NBB(PI < 100)",
+      "target": "生鲜类NBB(PI < 100)",
       "value": "280"
     },
     {
-      "source": "NBB(PI < 1)",
-      "target": "蔬菜类NBB(PI < 1)",
+      "source": "NBB(PI < 100)",
+      "target": "蔬菜类NBB(PI < 100)",
       "value": "120"
     },
     {
-      "source": "PI < 1",
-      "target": "KVI(PI < 1)",
+      "source": "PI < 100",
+      "target": "KVI(PI < 100)",
       "value": "1200"
     },
     {
-      "source": "KVI(PI < 1)",
-      "target": "食品类KVI(PI < 1)",
+      "source": "KVI(PI < 100)",
+      "target": "食品类KVI(PI < 100)",
       "value": "200"
     },
     {
-      "source": "KVI(PI < 1)",
-      "target": "用品类KVI(PI < 1)",
+      "source": "KVI(PI < 100)",
+      "target": "用品类KVI(PI < 100)",
       "value": "220"
     },
     {
-      "source": "KVI(PI < 1)",
-      "target": "生鲜类KVI(PI < 1)",
+      "source": "KVI(PI < 100)",
+      "target": "生鲜类KVI(PI < 100)",
       "value": "280"
     },
     {
-      "source": "KVI(PI < 1)",
-      "target": "蔬菜类KVI(PI < 1)",
+      "source": "KVI(PI < 100)",
+      "target": "蔬菜类KVI(PI < 100)",
       "value": "300"
     },
     {
-      "source": "PI < 1",
-      "target": "ForeGround(PI < 1)",
+      "source": "PI < 100",
+      "target": "ForeGround(PI < 100)",
       "value": "700"
     },
     {
-      "source": "ForeGround(PI < 1)",
-      "target": "食品类ForeGround(PI < 1)",
+      "source": "ForeGround(PI < 100)",
+      "target": "食品类ForeGround(PI < 100)",
       "value": "200"
     },
     {
-      "source": "ForeGround(PI < 1)",
-      "target": "用品类ForeGround(PI < 1)",
+      "source": "ForeGround(PI < 100)",
+      "target": "用品类ForeGround(PI < 100)",
       "value": "220"
     },
     {
-      "source": "ForeGround(PI < 1)",
-      "target": "生鲜类ForeGround(PI < 1)",
+      "source": "ForeGround(PI < 100)",
+      "target": "生鲜类ForeGround(PI < 100)",
       "value": "180"
     },
     {
-      "source": "ForeGround(PI < 1)",
-      "target": "蔬菜类ForeGround(PI < 1)",
+      "source": "ForeGround(PI < 100)",
+      "target": "蔬菜类ForeGround(PI < 100)",
       "value": "300"
     }
   ],
@@ -172,131 +172,131 @@
       "value": "5600"
     },
     {
-      "name": "PI > 1",
+      "name": "PI > 100",
       "value": "2700"
     },
     {
-      "name": "NBB(PI > 1)",
+      "name": "NBB(PI > 100)",
       "value": "800"
     },
     {
-      "name": "食品类NBB(PI > 1)",
+      "name": "食品类NBB(PI > 100)",
       "value": "240"
     },
     {
-      "name": "用品类NBB(PI > 1)",
+      "name": "用品类NBB(PI > 100)",
       "value": "160"
     },
     {
-      "name": "生鲜类NBB(PI > 1)",
+      "name": "生鲜类NBB(PI > 100)",
       "value": "280"
     },
     {
-      "name": "蔬菜类NBB(PI > 1)",
+      "name": "蔬菜类NBB(PI > 100)",
       "value": "120"
     },
     {
-      "name": "KVI(PI > 1)",
+      "name": "KVI(PI > 100)",
       "value": "1000"
     },
     {
-      "name": "食品类KVI(PI > 1)",
+      "name": "食品类KVI(PI > 100)",
       "value": "200"
     },
     {
-      "name": "用品类KVI(PI > 1)",
+      "name": "用品类KVI(PI > 100)",
       "value": "220"
     },
     {
-      "name": "生鲜类KVI(PI > 1)",
+      "name": "生鲜类KVI(PI > 100)",
       "value": "280"
     },
     {
-      "name": "蔬菜类KVI(PI > 1)",
+      "name": "蔬菜类KVI(PI > 100)",
       "value": "300"
     },
     {
-      "name": "ForeGround(PI > 1)",
+      "name": "ForeGround(PI > 100)",
       "value": "900"
     },
     {
-      "name": "食品类ForeGround(PI > 1)",
+      "name": "食品类ForeGround(PI > 100)",
       "value": "200"
     },
     {
-      "name": "用品类ForeGround(PI > 1)",
+      "name": "用品类ForeGround(PI > 100)",
       "value": "220"
     },
     {
-      "name": "生鲜类ForeGround(PI > 1)",
+      "name": "生鲜类ForeGround(PI > 100)",
       "value": "180"
     },
     {
-      "name": "蔬菜类ForeGround(PI > 1)",
+      "name": "蔬菜类ForeGround(PI > 100)",
       "value": "300"
     },
     {
-      "name": "PI < 1",
+      "name": "PI < 100",
       "value": "2900"
     },
     {
-      "name": "NBB(PI < 1)",
+      "name": "NBB(PI < 100)",
       "value": "1000"
     },
     {
-      "name": "食品类NBB(PI < 1)",
+      "name": "食品类NBB(PI < 100)",
       "value": "240"
     },
     {
-      "name": "用品类NBB(PI < 1)",
+      "name": "用品类NBB(PI < 100)",
       "value": "160"
     },
     {
-      "name": "生鲜类NBB(PI < 1)",
+      "name": "生鲜类NBB(PI < 100)",
       "value": "280"
     },
     {
-      "name": "蔬菜类NBB(PI < 1)",
+      "name": "蔬菜类NBB(PI < 100)",
       "value": "120"
     },
     {
-      "name": "KVI(PI < 1)",
+      "name": "KVI(PI < 100)",
       "value": "1200"
     },
     {
-      "name": "食品类KVI(PI < 1)",
+      "name": "食品类KVI(PI < 100)",
       "value": "200"
     },
     {
-      "name": "用品类KVI(PI < 1)",
+      "name": "用品类KVI(PI < 100)",
       "value": "220"
     },
     {
-      "name": "生鲜类KVI(PI < 1)",
+      "name": "生鲜类KVI(PI < 100)",
       "value": "280"
     },
     {
-      "name": "蔬菜类KVI(PI < 1)",
+      "name": "蔬菜类KVI(PI < 100)",
       "value": "300"
     },
     {
-      "name": "ForeGround(PI < 1)",
+      "name": "ForeGround(PI < 100)",
       "value": "700"
     },
     {
-      "name": "食品类ForeGround(PI < 1)",
+      "name": "食品类ForeGround(PI < 100)",
       "value": "200"
     },
     {
-      "name": "用品类ForeGround(PI < 1)",
+      "name": "用品类ForeGround(PI < 100)",
       "value": "220"
     },
     {
-      "name": "生鲜类ForeGround(PI < 1)",
+      "name": "生鲜类ForeGround(PI < 100)",
       "value": "180"
     },
     {
-      "name": "蔬菜类ForeGround(PI < 1)",
+      "name": "蔬菜类ForeGround(PI < 100)",
       "value": "300"
     }
   ],
@@ -885,10 +885,10 @@
       "name": "NBB",
       "tariff": [
         {
-          "value": 1.2
+          "value": 120
         },
         {
-          "value": 1.5
+          "value": 150
         }
       ],
       "numberOfSheets": [
@@ -912,10 +912,10 @@
       "name": "KVI",
       "tariff": [
         {
-          "value": 0.8
+          "value": 80
         },
         {
-          "value": 1
+          "value": 100
         }
       ],
       "numberOfSheets": [
@@ -939,10 +939,10 @@
       "name": "ForeGround",
       "tariff": [
         {
-          "value": 0.5
+          "value": 50
         },
         {
-          "value": 0.6
+          "value": 60
         }
       ],
       "numberOfSheets": [
@@ -965,24 +965,28 @@
   ],
   "effectAppraisal": [
     {
-      "date": "过去三周",
-      "sales": "123241",
-      "sell": "183241"
+      "date": "过去三个月",
+      "sales": "21",
+      "sell": "28",
+      "differenceValue": "7"
     },
     {
-      "date": "过去两周",
-      "sales": "123241",
-      "sell": "143241"
+      "date": "过去两个月",
+      "sales": "28",
+      "sell": "25",
+      "differenceValue": "-3"
     },
     {
-      "date": "过去一周",
-      "sales": "383210",
-      "sell": "483241"
+      "date": "过去一个月",
+      "sales": "44",
+      "sell": "48",
+      "differenceValue": "4"
     },
     {
-      "date": "当前周",
-      "sales": "484110",
-      "sell": "583241"
+      "date": "当前月",
+      "sales": "25",
+      "sell": "27",
+      "differenceValue": "2"
     }
   ]
 }
