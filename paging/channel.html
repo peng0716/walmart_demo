@@ -13,33 +13,33 @@
     <!--三级筛选-->
     <div class="floatLeft selectFilter">
       <select class="oneSelect">
-        <option data-index="-1">中南片区</option>
-        <option data-index="-1">华东片区</option>
-        <option data-index="-1">中原片区</option>
-        <option data-index="-1">云贵渝片区</option>
-        <option data-index="-1">成都片区</option>
-        <option data-index="-1">西北片区</option>
-        <option data-index="-1">北方片区</option>
+        <option data-index="-1">zone1</option>
+        <option data-index="-1">zone2</option>
+        <option data-index="-1">zone3</option>
+        <option data-index="-1">zone4</option>
+        <option data-index="-1">zone5</option>
+        <option data-index="-1">zone6</option>
+        <option data-index="-1">zone7</option>
       </select>
       <select class="twoSelect">
-        <option data-index="-1">深圳门店</option>
-        <option data-index="-1">广州门店</option>
-        <option data-index="-1">海口门店</option>
-        <option data-index="-1">三亚门店</option>
-        <option data-index="-1">南宁门店</option>
+        <option data-index="-1">Shenzhen stores</option>
+        <option data-index="-1">Guangzhou stores</option>
+        <option data-index="-1">Haikou stores</option>
+        <option data-index="-1">Sanya stores</option>
+        <option data-index="-1">Nanning stores</option>
       </select>
       <select class="twoSelect">
-        <option data-index="-1">食品类</option>
-        <option data-index="-1">生鲜类</option>
-        <option data-index="-1">用品类</option>
-        <option data-index="-1">蔬菜类</option>
+        <option data-index="-1">snack</option>
+        <option data-index="-1">snack</option>
+        <option data-index="-1">fresh wheat products</option>
+        <option data-index="-1">fresh wheat products</option>
       </select>
       <select class="threeSelect">
-        <option value="0">咖啡</option>
-        <option value="1">薯片</option>
+        <option value="0">coffee</option>
+        <option value="1">Chips</option>
       </select>
       <input type="text" class="select_text" id="select_text">
-      <input type="submit" id="dateSubmit2" class="date_picker dateClear" value="调 价"/>
+      <input type="submit" id="dateSubmit2" class="date_picker dateClear" value="GO"/>
     </div>
     <div class="floatRight detailsRight">
       <!--<select class="date_picker">
@@ -50,52 +50,52 @@
         <option value="">未来一周承运</option>
       </select>
       <a target="right" href="../paging/channelDetails.html" class="date_picker dateClear details">人工调价</a>-->
-      <a id="artificiAldjustment" class="date_picker dateClear details">调价设置</a>
+      <a id="artificiAldjustment" class="date_picker dateClear details" style="height: 20px">pricing setting</a>
     </div>
   </div>
   <div class="artificiAldjustment">
     <div class="selectFilter displayInlineBlock">
-      <span class="pricing_title">价格目标</span>
+      <span class="pricing_title">pricing goal</span>
       <select class="oneSelectRule">
-        <option data-index="-1">--请选择--</option>
+        <option data-index="-1">--please select--</option>
       </select>
     </div>
     <div class="selectFilter displayInlineBlock">
-      <span class="pricing_title marginLeft">价格规则</span>
+      <span class="pricing_title marginLeft">pricing rule</span>
       <!--三级筛选-->
       <select class="twoSelectRule">
-        <option data-index="-1">--请选择--</option>
+        <option data-index="-1">--please select--</option>
       </select>
       <select class="threeSelectRule">
-        <option data-index="-1">--请选择--</option>
+        <option data-index="-1">--please select--</option>
       </select>
       <select class="fourSelectRule">
-        <option value="0">--请选择--</option>
-        <option value="1">竞品一</option>
-        <option value="2">竞品二</option>
+        <option value="0">--please select--</option>
+        <option value="1">competitor A</option>
+        <option value="2">competitor B</option>
       </select>
-      <input type="text" class="select_text" value="" id="pricing_text">
-      <input type="submit" id="artificiAldjustmentSubmit" class="date_picker dateClear" value="提 交"/>
+      <input type="text" class="select_text" value="" id="pricing_text" style="width: 50px;">
+      <input type="submit" id="artificiAldjustmentSubmit" class="date_picker dateClear" value="OK"/>
     </div>
     <div id="optimal" class="selectFilter">
-      <span class="pricing_title">推荐最优价格</span>
-      <input id="input1" type="text" readonly="readonly" class="select_text">
-      <span class="pricing_title">推荐价格周期</span>
-      <input id="input2" type="text" readonly="readonly" class="select_text" placeholder="最优价格">
+      <span class="pricing_title">primary price</span>
+      <input id="input1" type="text" readonly="readonly" class="select_text" style="width: 50px;">
+      <span class="pricing_title">Effective price cycle</span>
+      <input id="input2" type="text" readonly="readonly" class="select_text" placeholder="primary price" style="width: 60px;">
     </div>
   </div>
   <!--KPI-->
   <div class="homeTop">
     <div class="homeTopText">
-      <span>商品库存</span>
+      <span>Inventory</span>
       <p class="inventory"></p>
     </div>
     <div class="homeTopText">
-      <span>建议价格</span>
+      <span>suggested price</span>
       <p class="price" style="color:#568EFD"></p>
     </div>
     <div class="homeTopText">
-      <span>新毛利</span>
+      <span>Gross margin</span>
       <p class="profits" style="color:#568EFD"></p>
     </div>
     <div class="homeTopText">
@@ -104,10 +104,10 @@
     </div>
     <div class="homeTopText" style="border-width: 0px;">
       <select id="KPI_select" class="date_picker" style="height: 30px">
-        <option value="0">竞争对手最常出现价格</option>
-        <option value="1">竞争对手最近出现价格</option>
-        <option value="2">竞争对手最高价</option>
-        <option value="3">竞争对手最低价</option>
+        <option value="0">most frequent price of competitor</option>
+        <option value="1">recent price of competitor</option>
+        <option value="2">highest price</option>
+        <option value="3">lowest price</option>
       </select>
       <p class="kpi_select">1317.6804万元</p>
     </div>

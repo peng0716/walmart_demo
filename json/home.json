@@ -6,7 +6,7 @@
   "selectProxy": "1256405",
   "links": [
     {
-      "source": "商品总数",
+      "source": "all",
       "target": "PI > 100",
       "value": "2700"
     },
@@ -17,22 +17,22 @@
     },
     {
       "source": "NBB(PI > 100)",
-      "target": "食品类NBB(PI > 100)",
+      "target": "snack_NBB(PI > 100)",
       "value": "240"
     },
     {
       "source": "NBB(PI > 100)",
-      "target": "用品类NBB(PI > 100)",
+      "target": "beverage_NBB(PI > 100)",
       "value": "160"
     },
     {
       "source": "NBB(PI > 100)",
-      "target": "生鲜类NBB(PI > 100)",
+      "target": "seafood_NBB(PI > 100)",
       "value": "280"
     },
     {
       "source": "NBB(PI > 100)",
-      "target": "蔬菜类NBB(PI > 100)",
+      "target": "vegetables_NBB(PI > 100)",
       "value": "120"
     },
     {
@@ -42,22 +42,22 @@
     },
     {
       "source": "KVI(PI > 100)",
-      "target": "食品类KVI(PI > 100)",
+      "target": "snack_KVI(PI > 100)",
       "value": "200"
     },
     {
       "source": "KVI(PI > 100)",
-      "target": "用品类KVI(PI > 100)",
+      "target": "beverage_KVI(PI > 100)",
       "value": "220"
     },
     {
       "source": "KVI(PI > 100)",
-      "target": "生鲜类KVI(PI > 100)",
+      "target": "seafood_KVI(PI > 100)",
       "value": "280"
     },
     {
       "source": "KVI(PI > 100)",
-      "target": "蔬菜类KVI(PI > 100)",
+      "target": "vegetables_KVI(PI > 100)",
       "value": "300"
     },
     {
@@ -67,26 +67,26 @@
     },
     {
       "source": "ForeGround(PI > 100)",
-      "target": "食品类ForeGround(PI > 100)",
+      "target": "snack_ForeGround(PI > 100)",
       "value": "200"
     },
     {
       "source": "ForeGround(PI > 100)",
-      "target": "用品类ForeGround(PI > 100)",
+      "target": "beverage_ForeGround(PI > 100)",
       "value": "220"
     },
     {
       "source": "ForeGround(PI > 100)",
-      "target": "生鲜类ForeGround(PI > 100)",
+      "target": "seafood_ForeGround(PI > 100)",
       "value": "180"
     },
     {
       "source": "ForeGround(PI > 100)",
-      "target": "蔬菜类ForeGround(PI > 100)",
+      "target": "vegetables_ForeGround(PI > 100)",
       "value": "300"
     },
     {
-      "source": "商品总数",
+      "source": "all",
       "target": "PI < 100",
       "value": "2900"
     },
@@ -97,22 +97,22 @@
     },
     {
       "source": "NBB(PI < 100)",
-      "target": "食品类NBB(PI < 100)",
+      "target": "snack_NBB(PI < 100)",
       "value": "240"
     },
     {
       "source": "NBB(PI < 100)",
-      "target": "用品类NBB(PI < 100)",
+      "target": "beverage_NBB(PI < 100)",
       "value": "160"
     },
     {
       "source": "NBB(PI < 100)",
-      "target": "生鲜类NBB(PI < 100)",
+      "target": "seafood_NBB(PI < 100)",
       "value": "280"
     },
     {
       "source": "NBB(PI < 100)",
-      "target": "蔬菜类NBB(PI < 100)",
+      "target": "vegetables_NBB(PI < 100)",
       "value": "120"
     },
     {
@@ -122,22 +122,22 @@
     },
     {
       "source": "KVI(PI < 100)",
-      "target": "食品类KVI(PI < 100)",
+      "target": "snack_KVI(PI < 100)",
       "value": "200"
     },
     {
       "source": "KVI(PI < 100)",
-      "target": "用品类KVI(PI < 100)",
+      "target": "beverage_KVI(PI < 100)",
       "value": "220"
     },
     {
       "source": "KVI(PI < 100)",
-      "target": "生鲜类KVI(PI < 100)",
+      "target": "seafood_KVI(PI < 100)",
       "value": "280"
     },
     {
       "source": "KVI(PI < 100)",
-      "target": "蔬菜类KVI(PI < 100)",
+      "target": "vegetables_KVI(PI < 100)",
       "value": "300"
     },
     {
@@ -147,28 +147,28 @@
     },
     {
       "source": "ForeGround(PI < 100)",
-      "target": "食品类ForeGround(PI < 100)",
+      "target": "snack_ForeGround(PI < 100)",
       "value": "200"
     },
     {
       "source": "ForeGround(PI < 100)",
-      "target": "用品类ForeGround(PI < 100)",
+      "target": "beverage_ForeGround(PI < 100)",
       "value": "220"
     },
     {
       "source": "ForeGround(PI < 100)",
-      "target": "生鲜类ForeGround(PI < 100)",
+      "target": "seafood_ForeGround(PI < 100)",
       "value": "180"
     },
     {
       "source": "ForeGround(PI < 100)",
-      "target": "蔬菜类ForeGround(PI < 100)",
+      "target": "vegetables_ForeGround(PI < 100)",
       "value": "300"
     }
   ],
   "nodes": [
     {
-      "name": "商品总数",
+      "name": "all",
       "value": "5600"
     },
     {
@@ -180,19 +180,19 @@
       "value": "800"
     },
     {
-      "name": "食品类NBB(PI > 100)",
+      "name": "snack_NBB(PI > 100)",
       "value": "240"
     },
     {
-      "name": "用品类NBB(PI > 100)",
+      "name": "beverage_NBB(PI > 100)",
       "value": "160"
     },
     {
-      "name": "生鲜类NBB(PI > 100)",
+      "name": "seafood_NBB(PI > 100)",
       "value": "280"
     },
     {
-      "name": "蔬菜类NBB(PI > 100)",
+      "name": "vegetables_NBB(PI > 100)",
       "value": "120"
     },
     {
@@ -200,19 +200,19 @@
       "value": "1000"
     },
     {
-      "name": "食品类KVI(PI > 100)",
+      "name": "snack_KVI(PI > 100)",
       "value": "200"
     },
     {
-      "name": "用品类KVI(PI > 100)",
+      "name": "beverage_KVI(PI > 100)",
       "value": "220"
     },
     {
-      "name": "生鲜类KVI(PI > 100)",
+      "name": "seafood_KVI(PI > 100)",
       "value": "280"
     },
     {
-      "name": "蔬菜类KVI(PI > 100)",
+      "name": "vegetables_KVI(PI > 100)",
       "value": "300"
     },
     {
@@ -220,19 +220,19 @@
       "value": "900"
     },
     {
-      "name": "食品类ForeGround(PI > 100)",
+      "name": "snack_ForeGround(PI > 100)",
       "value": "200"
     },
     {
-      "name": "用品类ForeGround(PI > 100)",
+      "name": "beverage_ForeGround(PI > 100)",
       "value": "220"
     },
     {
-      "name": "生鲜类ForeGround(PI > 100)",
+      "name": "seafood_ForeGround(PI > 100)",
       "value": "180"
     },
     {
-      "name": "蔬菜类ForeGround(PI > 100)",
+      "name": "vegetables_ForeGround(PI > 100)",
       "value": "300"
     },
     {
@@ -244,19 +244,19 @@
       "value": "1000"
     },
     {
-      "name": "食品类NBB(PI < 100)",
+      "name": "snack_NBB(PI < 100)",
       "value": "240"
     },
     {
-      "name": "用品类NBB(PI < 100)",
+      "name": "beverage_NBB(PI < 100)",
       "value": "160"
     },
     {
-      "name": "生鲜类NBB(PI < 100)",
+      "name": "seafood_NBB(PI < 100)",
       "value": "280"
     },
     {
-      "name": "蔬菜类NBB(PI < 100)",
+      "name": "vegetables_NBB(PI < 100)",
       "value": "120"
     },
     {
@@ -264,19 +264,19 @@
       "value": "1200"
     },
     {
-      "name": "食品类KVI(PI < 100)",
+      "name": "snack_KVI(PI < 100)",
       "value": "200"
     },
     {
-      "name": "用品类KVI(PI < 100)",
+      "name": "beverage_KVI(PI < 100)",
       "value": "220"
     },
     {
-      "name": "生鲜类KVI(PI < 100)",
+      "name": "seafood_KVI(PI < 100)",
       "value": "280"
     },
     {
-      "name": "蔬菜类KVI(PI < 100)",
+      "name": "vegetables_KVI(PI < 100)",
       "value": "300"
     },
     {
@@ -284,19 +284,19 @@
       "value": "700"
     },
     {
-      "name": "食品类ForeGround(PI < 100)",
+      "name": "snack_ForeGround(PI < 100)",
       "value": "200"
     },
     {
-      "name": "用品类ForeGround(PI < 100)",
+      "name": "beverage_ForeGround(PI < 100)",
       "value": "220"
     },
     {
-      "name": "生鲜类ForeGround(PI < 100)",
+      "name": "seafood_ForeGround(PI < 100)",
       "value": "180"
     },
     {
-      "name": "蔬菜类ForeGround(PI < 100)",
+      "name": "vegetables_ForeGround(PI < 100)",
       "value": "300"
     }
   ],
@@ -308,7 +308,7 @@
       "areaProxy": "246600",
       "department": [
         {
-          "name": "杭州门店",
+          "name": "Hangzhou stores",
           "value": "7000",
           "departmentSales": "420520",
           "departmentProxy": "224815",
@@ -332,38 +332,38 @@
           ]
         },
         {
-          "name": "上海门店",
+          "name": "Shanghai stores",
           "value": "7000",
           "departmentSales": "293560",
           "departmentProxy": "133659"
         },
         {
-          "name": "宁波门店",
+          "name": "Ningbo stores",
           "value": "7000",
           "departmentSales": "206200",
           "departmentProxy": "82198"
         },
         {
-          "name": "温州门店",
+          "name": "Wenzhou stores",
           "value": "2600",
           "departmentSales": "165230",
           "departmentProxy": "74800"
         },
         {
-          "name": "南京门店",
+          "name": "Nanjing store",
           "value": "6450",
           "departmentSales": "288420",
           "departmentProxy": "113827"
         },
         {
-          "name": "常州门店",
+          "name": "Changzhou stores",
           "value": "5000",
           "departmentSales": "200980",
           "departmentProxy": "103207",
           "departmentDirect": "1000"
         },
         {
-          "name": "合肥门店",
+          "name": "Hefei store",
           "value": "3000",
           "departmentSales": "163170",
           "departmentProxy": "72012"
@@ -377,31 +377,31 @@
       "areaProxy": "183420",
       "department": [
         {
-          "name": "重庆门店",
+          "name": "Chongqing stores",
           "value": "7000",
           "departmentSales": "676470",
           "departmentProxy": "414383"
         },
         {
-          "name": "昆明门店",
+          "name": "Kunming stores",
           "value": "8000",
           "departmentSales": "543320",
           "departmentProxy": "228150"
         },
         {
-          "name": "武汉门店",
+          "name": "Wuhan stores",
           "value": "12000",
           "departmentSales": "387789",
           "departmentProxy": "118900"
         },
         {
-          "name": "丽江门店",
+          "name": "Lijiang stores",
           "value": "5000",
           "departmentSales": "198640",
           "departmentProxy": "62079"
         },
         {
-          "name": "长沙门店",
+          "name": "Changsha stores",
           "value": "4000",
           "departmentSales": "444320",
           "departmentProxy": "113245"
@@ -415,37 +415,37 @@
       "areaProxy": "370492",
       "department": [
         {
-          "name": "北京门店",
+          "name": "Beijing stores",
           "value": "7000",
           "departmentSales": "595760",
           "departmentProxy": "404899"
         },
         {
-          "name": "沈阳门店",
+          "name": "Shenyang store",
           "value": "8000",
           "departmentSales": "358030",
           "departmentProxy": "161121"
         },
         {
-          "name": "天津门店",
+          "name": "Tianjin store",
           "value": "12000",
           "departmentSales": "461460",
           "departmentProxy": "229908"
         },
         {
-          "name": "哈尔滨门店",
+          "name": "Harbin store",
           "value": "5000",
           "departmentSales": "662970",
           "departmentProxy": "450705"
         },
         {
-          "name": "长春门店",
+          "name": "Changchun stores",
           "value": "4000",
           "departmentSales": "182130",
           "departmentProxy": "62017"
         },
         {
-          "name": "大连门店",
+          "name": "Dalian stores",
           "value": "4000",
           "departmentSales": "274880",
           "departmentProxy": "110842"
@@ -459,31 +459,31 @@
       "areaProxy": "411264",
       "department": [
         {
-          "name": "成都门店",
+          "name": "Chengdu store",
           "value": "12000",
           "departmentSales": "621445",
           "departmentProxy": "428503"
         },
         {
-          "name": "拉萨门店",
+          "name": "Stores in Lhasa",
           "value": "7000",
           "departmentSales": "655170",
           "departmentProxy": "452996"
         },
         {
-          "name": "绵阳门店",
+          "name": "Mianyang stores",
           "value": "8000",
           "departmentSales": "375980",
           "departmentProxy": "211080"
         },
         {
-          "name": "西昌门店",
+          "name": "Xichang stores",
           "value": "5000",
           "departmentSales": "350740",
           "departmentProxy": "209535"
         },
         {
-          "name": "攀枝花门店",
+          "name": "Panzhihua store",
           "value": "4000",
           "departmentSales": "224310",
           "departmentProxy": "93423"
@@ -497,37 +497,37 @@
       "areaProxy": "159905",
       "department": [
         {
-          "name": "乌鲁木齐门店",
+          "name": "Urumqi store",
           "value": "7000",
           "departmentSales": "406510",
           "departmentProxy": "182184"
         },
         {
-          "name": "西宁门店",
+          "name": "Xining stores",
           "value": "8000",
           "departmentSales": "152230",
           "departmentProxy": "69753"
         },
         {
-          "name": "西安门店",
+          "name": "Xi 'an stores",
           "value": "12000",
           "departmentSales": "332830",
           "departmentProxy": "123809"
         },
         {
-          "name": "银川门店",
+          "name": "Yinchuan stores",
           "value": "5000",
           "departmentSales": "428340",
           "departmentProxy": "301641"
         },
         {
-          "name": "呼和浩特门店",
+          "name": "Hohhot stores",
           "value": "4000",
           "departmentSales": "280540",
           "departmentProxy": "150757"
         },
         {
-          "name": "兰州门店",
+          "name": "Lanzhou stores",
           "value": "4000",
           "departmentSales": "172660",
           "departmentProxy": "91851"
@@ -541,31 +541,31 @@
       "areaProxy": "381862",
       "department": [
         {
-          "name": "广州门店",
+          "name": "Guangzhou stores",
           "value": "7000",
           "departmentSales": "563200",
           "departmentProxy": "419500"
         },
         {
-          "name": "海口门店",
+          "name": "Haikou stores",
           "value": "8000",
           "departmentSales": "333200",
           "departmentProxy": "213500"
         },
         {
-          "name": "深圳门店",
+          "name": "Shenzhen stores",
           "value": "12000",
           "departmentSales": "623200",
           "departmentProxy": "389500"
         },
         {
-          "name": "三亚门店",
+          "name": "Sanya stores",
           "value": "5000",
           "departmentSales": "183200",
           "departmentProxy": "96500"
         },
         {
-          "name": "南宁门店",
+          "name": "Nanning stores",
           "value": "4000",
           "departmentSales": "333200",
           "departmentProxy": "133500"
@@ -579,37 +579,37 @@
       "areaProxy": "342030",
       "department": [
         {
-          "name": "青岛门店",
+          "name": "Qingdao store",
           "value": "7000",
           "departmentSales": "491500",
           "departmentProxy": "256700"
         },
         {
-          "name": "厦门门店",
+          "name": "Xiamen stores",
           "value": "8000",
           "departmentSales": "381500",
           "departmentProxy": "267700"
         },
         {
-          "name": "郑州门店",
+          "name": "Zhengzhou stores",
           "value": "12000",
           "departmentSales": "551500",
           "departmentProxy": "412700"
         },
         {
-          "name": "济南门店",
+          "name": "Jinan store",
           "value": "5000",
           "departmentSales": "451500",
           "departmentProxy": "329700"
         },
         {
-          "name": "太原门店",
+          "name": "Taiyuan stores",
           "value": "4000",
           "departmentSales": "251500",
           "departmentProxy": "98700"
         },
         {
-          "name": "福州门店",
+          "name": "Fuzhou stores",
           "value": "4000",
           "departmentSales": "421500",
           "departmentProxy": "230700"
@@ -631,19 +631,19 @@
   ],
   "allDate": [
     {
-      "date": "过去两周",
+      "date": "last two weeks",
       "sales": "123241",
       "benefit": "133241",
       "sell": "143241"
     },
     {
-      "date": "过去一周",
+      "date": "last week",
       "sales": "383210",
       "benefit": "283241",
       "sell": "583241"
     },
     {
-      "date": "当前周",
+      "date": "now",
       "sales": "684110",
       "benefit": "483241",
       "sell": "183241"
@@ -651,7 +651,7 @@
   ],
   "allDate2": [
     {
-      "date": "当前周",
+      "date": "now",
       "sales": "123241",
       "benefit": "483241",
       "sell": "583241",
@@ -660,7 +660,7 @@
       "sellArtificial": "893241"
     },
     {
-      "date": "未来一周",
+      "date": "coming week",
       "sales": "233241",
       "benefit": "483241",
       "sell": "783241",
@@ -669,7 +669,7 @@
       "sellArtificial": "443241"
     },
     {
-      "date": "未来两周",
+      "date": "next two weeks",
       "sales": "343241",
       "benefit": "483241",
       "sell": "983241",
@@ -680,19 +680,19 @@
   ],
   "allDateChips": [
     {
-      "date": "过去两周",
+      "date": "last two weeks",
       "sales": "283241",
       "benefit": "383241",
       "sell": "553241"
     },
     {
-      "date": "过去一周",
+      "date": "last week",
       "sales": "483210",
       "benefit": "233241",
       "sell": "313241"
     },
     {
-      "date": "当前周",
+      "date": "now",
       "sales": "584110",
       "benefit": "593241",
       "sell": "643241"
@@ -700,7 +700,7 @@
   ],
   "allDateChips2": [
     {
-      "date": "当前周",
+      "date": "now",
       "sales": "684110",
       "benefit": "463241",
       "sell": "183241",
@@ -709,7 +709,7 @@
       "sellArtificial": "123241"
     },
     {
-      "date": "未来一周",
+      "date": "coming week",
       "sales": "784110",
       "benefit": "313241",
       "sell": "753241",
@@ -718,7 +718,7 @@
       "sellArtificial": "333241"
     },
     {
-      "date": "未来两周",
+      "date": "next two weeks",
       "sales": "984110",
       "benefit": "183241",
       "sell": "1083241",
@@ -729,37 +729,37 @@
   ],
   "selectOne": [
     {
-      "name": "毛利最大化",
+      "name": "Gross margin Maximization",
       "provinceIevel": [
         {
-          "name": "最小毛利",
+          "name": "margin minimum",
           "department": [
             {
-              "name": "百分比"
+              "name": "percentage"
             },
             {
-              "name": "具体金额"
+              "name": "amount"
             }
           ]
         },
         {
-          "name": "最大毛利",
+          "name": "margin maximum",
           "department": [
             {
-              "name": "百分比"
+              "name": "percentage"
             },
             {
-              "name": "具体金额"
+              "name": "amount"
             }
           ]
         }
       ]
     },
     {
-      "name": "应对竞争者",
+      "name": "competition",
       "provinceIevel": [
         {
-          "name": "竞争优先级",
+          "name": "priority",
           "value": "1738080",
           "areaSales": "1738080",
           "areaProxy": "21466",
@@ -869,10 +869,133 @@
           ],
           "department": [
             {
-              "name": "最大竞争者"
+              "name": "priority"
             },
             {
-              "name": "最小竞争者"
+              "name": "worst"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sales amount Maximization",
+      "provinceIevel": [
+        {
+          "name": "sales target",
+          "value": "1738080",
+          "areaSales": "1738080",
+          "areaProxy": "21466",
+          "areaDate": [
+            {
+              "id": "01",
+              "date": "2016-08-01",
+              "sales": "8000",
+              "proxy": "5000"
+            },
+            {
+              "id": "02",
+              "date": "2016-08-02",
+              "sales": "8000",
+              "proxy": "5000",
+              "direct": [
+                {
+                  "name": "直销",
+                  "value": 1000
+                },
+                {
+                  "name": "分销",
+                  "value": 700
+                }
+              ]
+            },
+            {
+              "id": "03",
+              "date": "2016-08-03",
+              "sales": "8000",
+              "proxy": "5000",
+              "direct": [
+                {
+                  "name": "直销",
+                  "value": 1000
+                },
+                {
+                  "name": "分销",
+                  "value": 700
+                }
+              ]
+            },
+            {
+              "id": "04",
+              "date": "2016-08-04",
+              "sales": "8000",
+              "proxy": "5000",
+              "direct": [
+                {
+                  "name": "直销",
+                  "value": 1000
+                },
+                {
+                  "name": "分销",
+                  "value": 700
+                }
+              ]
+            },
+            {
+              "id": "05",
+              "date": "2016-08-05",
+              "sales": "8000",
+              "proxy": "5000",
+              "direct": [
+                {
+                  "name": "直销",
+                  "value": 1000
+                },
+                {
+                  "name": "分销",
+                  "value": 700
+                }
+              ]
+            },
+            {
+              "id": "06",
+              "date": "2016-08-06",
+              "sales": "8000",
+              "proxy": "5000",
+              "direct": [
+                {
+                  "name": "直销",
+                  "value": 1000
+                },
+                {
+                  "name": "分销",
+                  "value": 700
+                }
+              ]
+            },
+            {
+              "id": "07",
+              "date": "2016-08-07",
+              "sales": "8000",
+              "proxy": "5000",
+              "direct": [
+                {
+                  "name": "直销",
+                  "value": 1000
+                },
+                {
+                  "name": "分销",
+                  "value": 700
+                }
+              ]
+            }
+          ],
+          "department": [
+            {
+              "name": "max"
+            },
+            {
+              "name": "min"
             }
           ]
         }
@@ -965,25 +1088,25 @@
   ],
   "effectAppraisal": [
     {
-      "date": "过去三个月",
+      "date": "Past three months",
       "sales": "21",
       "sell": "28",
       "differenceValue": "7"
     },
     {
-      "date": "过去两个月",
+      "date": "Past Two months",
       "sales": "28",
       "sell": "25",
       "differenceValue": "-3"
     },
     {
-      "date": "过去一个月",
+      "date": "Past Onemonths",
       "sales": "44",
       "sell": "48",
       "differenceValue": "4"
     },
     {
-      "date": "当前月",
+      "date": "current month",
       "sales": "25",
       "sell": "27",
       "differenceValue": "2"

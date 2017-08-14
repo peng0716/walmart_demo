@@ -7,10 +7,10 @@ var submitData = {
   testRandom: 0,
   subVal: '',
   subText: '',
-  initFormatter : '{b}<br />{a0}: {c0}' + '（万）',
-  submitFormatter : '{b}<br />{a0}: {c0}' + '（万）' + '<br />{a1}: {c1}' + '（万）',
-  initLegendData : ['By 建议价格'],
-  submitLegendData : ['By 建议价格','By 人工调价'],
+  initFormatter : '{b}<br />{a0}: {c0}' + '（10K）',
+  submitFormatter : '{b}<br />{a0}: {c0}' + '（10K）' + '<br />{a1}: {c1}' + '（10K）',
+  initLegendData : ['suggested price'],
+  submitLegendData : ['suggested price','manually pricing'],
   xData : function (data) {
     var ary = []
     data.map(function (item) {
@@ -19,19 +19,19 @@ var submitData = {
     return ary
   },
   seriesText: {
-    name: 'By 人工调价',
+    name: 'manually pricing',
     type: 'line',
     yAxisIndex: 0,
     smooth: true
   },
   seriesText1: {
-    name: 'By 人工调价',
+    name: 'manually pricing',
     type: 'line',
     yAxisIndex: 0,
     smooth: true
   },
   seriesText2: {
-    name: 'By 人工调价',
+    name: 'manually pricing',
     type: 'line',
     yAxisIndex: 0,
     smooth: true

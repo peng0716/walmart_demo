@@ -19,7 +19,7 @@ $(function () {
         legend: {
           left: '30%',
           top: 10,
-          data: ['调价前', '调价后']
+          data: ['before', 'after']
         },
         grid: {
           top: '30%',
@@ -49,14 +49,14 @@ $(function () {
         ],
         series: [
           {
-            name: '调价前',
+            name: 'before',
             type: 'bar',
             data: res.area.map(function (item) {
               return item.tariff[0].value
             })
           },
           {
-            name: '调价后',
+            name: 'after',
             type: 'bar',
             data: res.area.map(function (item) {
               return item.tariff[1].value
@@ -84,7 +84,7 @@ $(function () {
         legend: {
           left: '40%',
           top: 10,
-          data: ['调价前', '调价后']
+          data: ['before', 'after']
         },
         grid: {
           top: '30%',
@@ -115,14 +115,14 @@ $(function () {
         ],
         series: [
           {
-            name: '调价前',
+            name: 'before',
             type: 'bar',
             data: res.area.map(function (item) {
               return item.numberOfSheets[0].value
             })
           },
           {
-            name: '调价后',
+            name: 'after',
             type: 'bar',
             data: res.area.map(function (item) {
               return item.numberOfSheets[1].value
@@ -132,11 +132,11 @@ $(function () {
       };
       tariffsBar2.setOption(tariffsBar2Option);
 
-      //Higer%
+      //Higher%
       var tariffsScatter = echarts.init(document.getElementById('tariffsScatter'));
       var tariffsScatterOption = {
         title: {
-          text: 'Higer%',
+          text: 'Higher%',
           left: 10,
           top: 10
         },
@@ -150,7 +150,7 @@ $(function () {
         legend: {
           left: '40%',
           top: 10,
-          data: ['调价前', '调价后']
+          data: ['before', 'after']
         },
         grid: {
           top: '30%',
@@ -181,14 +181,14 @@ $(function () {
         ],
         series: [
           {
-            name: '调价前',
+            name: 'before',
             type: 'bar',
             data: res.area.map(function (item) {
               return item.areatariffPie[0].value
             })
           },
           {
-            name: '调价后',
+            name: 'after',
             type: 'bar',
             data: res.area.map(function (item) {
               return item.areatariffPie[1].value
@@ -203,22 +203,22 @@ $(function () {
       var tariffsScatterOption2 = {
         title: {
           left: 'left',
-            text: '模型优化效果评估',
+            text: 'effect evaluation of model optimization',
             top: 6,
         },
         tooltip: {
           trigger: 'axis',
-          formatter: '{b}<br />{a0}: {c0}' + '（万）' + '<br />{a1}: {c1}' + '（万）' + '<br />{a2}: {c2}' + '（万）'
+          formatter: '{b}<br />{a0}: {c0}' + '（10K）' + '<br />{a1}: {c1}' + '（10K）' + '<br />{a2}: {c2}' + '（10K）'
         },
         legend: {
-          top: 10,
-          left: '40%',
-          data: ['真实数据','预测数据','GAP']
+          top: 30,
+          right: 10,
+          data: ['Real data','Prediction data','GAP']
         },
         grid: {
           top: '33%',
           left: '5%',
-          right: '5%',
+          right: '8%',
           bottom: '8%',
           containLabel: true
         },
@@ -232,7 +232,7 @@ $(function () {
         yAxis: [
           {
             type: 'value',
-            name: "销售量/万元",
+            name: "sales/￥10K",
             splitLine: {
               show: false
             }
@@ -240,7 +240,7 @@ $(function () {
         ],
           series: [
           {
-            name: '真实数据',
+            name: 'Real data',
             type: 'line',
             smooth: true,
             yAxisIndex: 0,
@@ -249,7 +249,7 @@ $(function () {
             })
           },
           {
-            name: '预测数据',
+            name: 'Prediction data',
             type: 'line',
             smooth: true,
             yAxisIndex: 0,

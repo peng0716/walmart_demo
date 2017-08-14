@@ -15,14 +15,14 @@ $(function () {
         return '<option value="' + item.value + '" data-index="' + index + '">' + item.name + '</option>';
       })
 
-      $('.oneSelectRule').html('<option data-index="-1">--请选择--</option>' + options);
+      $('.oneSelectRule').html('<option data-index="-1">--please select--</option>' + options);
 
       $('.oneSelectRule').on('change', function () {
 
         var index = $(this).find('option:selected').data('index');
 
         if (index == -1) {
-          $('.twoSelectRule').html('<option data-index="-1">--请选择--</option>');
+          $('.twoSelectRule').html('<option data-index="-1">--please select--</option>');
           return;
         }
 
@@ -31,7 +31,7 @@ $(function () {
         var option_dep = provinceIevel.map(function (item, index) {
           return '<option value="' + item.value + '" data-index="' + index + '">' + item.name + '</option>';
         })
-        $('.twoSelectRule').html('<option data-index="-1">--请选择--</option>' + option_dep);
+        $('.twoSelectRule').html('<option data-index="-1">--please select--</option>' + option_dep);
       })
 
       $('.twoSelectRule').on('change', function () {
@@ -39,7 +39,7 @@ $(function () {
         var p_index = $('.oneSelectRule').find('option:selected').data('index');
 
         if (index == -1) {
-          $('.twoSelectRule').html('<option data-index="-1">--请选择--</option>');
+          $('.twoSelectRule').html('<option data-index="-1">--please select--</option>');
           return;
         }
 
@@ -52,7 +52,7 @@ $(function () {
           var area_dep_option = area.map(function (item, index) {
             return '<option value="' + item.value + '" data-index="' + index + '">' + item.name + '</option>';
           })
-          $('.threeSelectRule').html('<option data-index="-1">--请选择--</option>' + area_dep_option);
+          $('.threeSelectRule').html('<option data-index="-1">--please select--</option>' + area_dep_option);
         }
 
       })
@@ -60,11 +60,11 @@ $(function () {
       // 人工调价第三级 选择事件
       $('.threeSelectRule').change(function(){
         var text = $('.threeSelectRule option:selected').text()
-        if(text == '百分比' || text == '具体金额'){
+        if(text == 'percentage' || text == 'amount' || text == 'max' || text == 'min'){
           $('.fourSelectRule').val('0')
           $('.fourSelectRule').css(submitData.displayNone)
           $('#pricing_text').css(submitData.displayInline)
-        }else if(text == '最大竞争者' || text == '最小竞争者'){
+        }else if(text == 'priority' || text == 'worst'){
           $('#pricing_text').val('')
           $('#pricing_text').css(submitData.displayNone)
           $('.fourSelectRule').css(submitData.displayInline)
@@ -79,28 +79,28 @@ $(function () {
           submitData.recommend = Math.floor(Math.random()*10+65)
           submitData.cycle = Math.floor(Math.random()*3+1)
           $('#input1').attr('placeholder',submitData.recommend)
-          $('#input2').attr('placeholder',submitData.cycle + '个月')
+          $('#input2').attr('placeholder',submitData.cycle + 'months')
           $('#optimal').css(submitData.displayInline)
           $('#select_text').val(submitData.recommend)
           submitData.subVal = $('.threeSelect').val()
           submitData.subText = $('#select_text').val()
           sub(submitData.subVal,submitData.subText)
         } else {
-          alert('请先选择条件！！！')
+          alert('Please select the conditions first！！！')
         }
       })
 
       //KPI
-      $('.inventory').html(res.init_KPI.inventory + '万件');
-      $('.price').html(res.init_KPI.price + '元');
-      $('.profits').html(res.init_KPI.profits + '元');
-      $('.rain').html(res.init_KPI.rain + '元');
-      $('.kpi_select').html(res.KPI_select[0] + '元');
+      $('.inventory').html(res.init_KPI.inventory /  100 + 'M');
+      $('.price').html('￥' + res.init_KPI.price);
+      $('.profits').html('￥' + res.init_KPI.profits);
+      $('.rain').html('￥' + res.init_KPI.rain);
+      $('.kpi_select').html('￥' + res.KPI_select[0]);
 
       // KPI select选择事件
       $('#KPI_select').change(function(){
         var val = $('#KPI_select').val()
-        $('.kpi_select').html(res.KPI_select[val] + '元')
+        $('.kpi_select').html('￥' + res.KPI_select[val])
       })
 
       //销售额趋势预测
@@ -108,7 +108,7 @@ $(function () {
       var lineZHOption = {
         title: {
           left: 'left',
-          text: '销售额趋势预测',
+          text: 'Forecast trend of sales',
           top: 6,
         },
         tooltip: {
@@ -116,16 +116,16 @@ $(function () {
           position: function (pt) {
             return [pt[0], '10%'];
           },
-          formatter: '{b}<br />{a0}: {c0}' + '（万）'
+          formatter: '{b}<br />{a0}: {c0}' + '（10K）'
         },
         legend: {
           top: 35,
           left: 10,
-          data: ['By 建议价格']
+          data: ['suggested price']
         },
         grid: {
           top: '33%',
-          left: '5%',
+          left: '10%',
           right: '10%',
           bottom: '8%',
           containLabel: true
@@ -140,7 +140,7 @@ $(function () {
         yAxis: [
           {
             type: 'value',
-            name: "万元",
+            name: "￥10K",
             splitLine: {
               show: false
             }
@@ -148,7 +148,7 @@ $(function () {
         ],
         series: [
           {
-            name: 'By 建议价格',
+            name: 'suggested price',
             type: 'line',
             smooth: true,
             yAxisIndex: 0,
@@ -165,7 +165,7 @@ $(function () {
       var lineXSOption = {
         title: {
           left: 'left',
-          text: '毛利趋势预测',
+          text: 'Forecast trend of margin',
           top: 6,
         },
         tooltip: {
@@ -173,16 +173,16 @@ $(function () {
           position: function (pt) {
             return [pt[0], '10%'];
           },
-          formatter: '{b}<br />{a0}: {c0}' + '（万）'
+          formatter: '{b}<br />{a0}: {c0}' + '（10K）'
         },
         legend: {
           top: 35,
           left: 10,
-          data: ['By 建议价格']
+          data: ['suggested price']
         },
         grid: {
           top: '33%',
-          left: '5%',
+          left: '10%',
           right: '10%',
           bottom: '8%',
           containLabel: true
@@ -197,7 +197,7 @@ $(function () {
         yAxis: [
           {
             type: 'value',
-            name: "万元",
+            name: "￥10K",
             splitLine: {
               show: false
             }
@@ -205,7 +205,7 @@ $(function () {
         ],
         series: [
           {
-            name: 'By 建议价格',
+            name: 'suggested price',
             type: 'line',
             smooth: true,
             yAxisIndex: 0,
@@ -222,21 +222,21 @@ $(function () {
       var lineOption =  {
         title: {
           left: 'left',
-          text: '销售量趋势预测',
+          text: 'Forecast trend of sales volume',
           top: 6,
         },
         tooltip: {
           trigger: 'axis',
-          formatter: '{b}<br />{a0}: {c0}' + '（万）'
+          formatter: '{b}<br />{a0}: {c0}' + '（10K）'
         },
         legend: {
           top: 35,
           left: 10,
-          data: ['By 建议价格']
+          data: ['suggested price']
         },
         grid: {
           top: '33%',
-          left: '5%',
+          left: '10%',
           right: '10%',
           bottom: '8%',
           containLabel: true
@@ -251,7 +251,7 @@ $(function () {
         yAxis: [
           {
             type: 'value',
-            name: "万元",
+            name: "￥10K",
             splitLine: {
               show: false
             }
@@ -259,7 +259,7 @@ $(function () {
         ],
         series: [
           {
-            name: 'By 建议价格',
+            name: 'suggested price',
             type: 'line',
             smooth: true,
             yAxisIndex: 0,

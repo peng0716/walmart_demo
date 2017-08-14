@@ -8,7 +8,7 @@
   var channelForce = echarts.init(document.getElementById('channelForce'));
   var channelForce_option = {
     title: {
-      text: '商品竞争状况分析',
+      text: 'Analysis of competition situation',
       left: 10,
       top: 10
     },
@@ -27,7 +27,7 @@
         label: {
           normal: {
             show: true,
-            formatter: '{b}:{c}（万）'
+            formatter: '{b}:{c}（10K）'
           },
         },
         itemStyle: {
@@ -58,7 +58,7 @@
   var chinaOption = {
     color: ['#FF4455', '#568EFD'],
     title: {
-      text: '全国各zone商品价格分布',
+      text: 'The regional price distribution',
       top: 10,
       left: 10,
     },
@@ -71,7 +71,7 @@
       max: 120,
       left: 'left',
       top: 'bottom',
-      text: ['高', '低'],           // 文本，默认为数值文本
+      text: ['higt', 'low'],           // 文本，默认为数值文本
       calculable: true,
       color: ['orangered', 'yellow', 'lightskyblue']
     },
@@ -111,7 +111,7 @@
       formatter: '{b}<br />{a0}: {c0}' + '<br />{a1}: {c1}'
     },
     legend: {
-      data: ['现价', '利润'],
+      data: ['Current price', 'profit'],
       top: 25,
     },
     grid: {
@@ -131,17 +131,17 @@
     yAxis: [
       {
         type: 'value',
-        name: '元'
+        name: 'yuan'
       },
       {
         type: 'value',
-        name: '元',
+        name: 'yuan',
         max: 70
       }
     ],
     series: [
       {
-        name: '现价',
+        name: 'Current price',
         type: 'bar',
         yAxisIndex: 0,
         label: {
@@ -154,7 +154,7 @@
         })
       },
       {
-        name: '利润',
+        name: 'profit',
         type: 'line',
         yAxisIndex: 1,
         label: {
