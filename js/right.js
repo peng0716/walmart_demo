@@ -71,13 +71,13 @@
       max: 120,
       left: 'left',
       top: 'bottom',
-      text: ['higt', 'low'],           // 文本，默认为数值文本
+      text: ['high', 'low'],           // 文本，默认为数值文本
       calculable: true,
       color: ['orangered', 'yellow', 'lightskyblue']
     },
     series: [
       {
-        name: 'PI值',
+        name: 'PI Value',
         type: 'map',
         mapType: 'china',
         selectedMode: 'single',
