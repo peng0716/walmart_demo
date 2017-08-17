@@ -4,7 +4,9 @@ body,div,input,button,ul,li,ol,h1,h2,h3,h4,h5,h6,p,a,span,img,strong,em,dd{
     padding: 0;
     font-family: "微软雅黑", Helvetica, sans-serif;
     font-size: 12px;
-    -webkit-user-select: none;
+}
+:not(input){
+  -webkit-user-select: none;
 }
 html,body{
     height: 100%;
