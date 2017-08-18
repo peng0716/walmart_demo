@@ -106,7 +106,7 @@ html, body {
   /*width: 90px;*/
   background: #fefefe;
   border: 1px solid #fff;
-  font-size: 14px;
+  font-size: 16px;
   color: #777;
   padding: 5px;
   border-radius: 3px;
@@ -143,7 +143,7 @@ html, body {
 .selectFilter > select {
   margin-right: 5px;
   min-width: 100px;
-  height: 32px;
+  height: 30px;
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -162,17 +162,30 @@ html, body {
 }
 
 /*人工调价 预警详情*/
-.artificiAldjustment,.warningParticulars {
+.artificiAldjustment,.warningParticulars,.factorSelection {
   display: none;
   padding:10px;
   background-color: #eee;
 }
+.factorSelection {
+  border-bottom: 1px solid #fff;
+}
 .pricing_title {
   display: inline-block;
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   line-height: 32px;
   font-size: 14px;
   color: #777;
+}
+.factorSelection_label {
+  display: inline-block;
+  line-height: 32px;
+  font-size: 1.2em;
+}
+.factorSelection_label > input {
+  height: 16px;
+  width: 16px;
+  margin:0 5px;
 }
 #pricing_text,.fourSelectRule,#optimal {
   display: none;

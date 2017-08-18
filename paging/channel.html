@@ -48,8 +48,51 @@
         <option value="">未来一周承运</option>
       </select>
       <a target="right" href="../paging/channelDetails.html" class="date_picker dateClear details">人工调价</a>-->
+      <a id="factorSelection" class="date_picker dateClear details" style="height: 20px">Factors</a>
       <a id="artificiAldjustment" class="date_picker dateClear details" style="height: 20px">pricing setting</a>
     </div>
+  </div>
+  <div class="factorSelection">
+    <div class="selectFilter displayInlineBlock">
+      <span class="pricing_title">Time-Series Model Factors：</span>
+      <label class="factorSelection_label">
+        <input type="checkbox" value="" />Trend
+      </label>
+      <label class="factorSelection_label">
+        <input type="checkbox" value="" />Seasonality
+      </label>
+      <label class="factorSelection_label">
+        <input type="checkbox" value="" />Holidays
+      </label>
+      <label class="factorSelection_label">
+        <input type="checkbox" value="" />Weather
+      </label>
+    </div>
+    <div class="selectFilter displayInlineBlock" style="display: block">
+      <span class="pricing_title">Marketing Mix Model Factors：</span>
+      <label class="factorSelection_label">
+        <input type="checkbox" value="" />Price
+      </label>
+      <label class="factorSelection_label">
+        <input type="checkbox" value="" />Promotion
+      </label>
+      <label class="factorSelection_label">
+        <input type="checkbox" value="" />Location
+      </label>
+      <label class="factorSelection_label">
+        <input type="checkbox" value="" />Guest flow Statistics
+      </label>
+    </div>
+    <div class="selectFilter displayInlineBlock">
+      <span class="pricing_title">Product's life cycle </span>
+      <!--三级筛选-->
+      <select class="oneSelect">
+        <option data-index="-1">New Product</option>
+        <option data-index="-1">Hot-Sales</option>
+        <option data-index="-1">Clearnce</option>
+      </select>
+    </div>
+    <input type="submit" id="factorSelectionSubmit" class="date_picker dateClear" value="OK"/>
   </div>
   <div class="artificiAldjustment">
     <div class="selectFilter displayInlineBlock">
@@ -102,8 +145,8 @@
     </div>
     <div class="homeTopText" style="border-width: 0px;">
       <select id="KPI_select" class="date_picker" style="height: 30px">
-        <option value="0">most frequent price of competitor</option>
-        <option value="1">recent price of competitor</option>
+        <option value="0">Competitor's most frequent price</option>
+        <option value="1">Competitor's recent price</option>
         <option value="2">highest price</option>
         <option value="3">lowest price</option>
       </select>

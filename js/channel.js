@@ -4,6 +4,11 @@ $(function () {
       var provinces = res.selectOne;  //筛选数据
       var allDate;
 
+      /*因子选择按钮点击事件*/
+      $('#factorSelection').on('click',function () {
+        $('.factorSelection').toggle(1000)
+      })
+
       /*人工调价点击事件*/
       $('#artificiAldjustment').on('click',function () {
         $('#optimal').css(submitData.displayNone)
